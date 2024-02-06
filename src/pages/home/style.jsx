@@ -24,18 +24,27 @@ display: flex;
 }
 `;
 
-export const HomeHeaderTitle = styled.div``;
+export const HomeHeaderTitle = styled.div`
+max-width: 1280px;
+width: 50%;
+margin: auto;
+@media(max-width:768px){
+width: 100%;
+padding: 2px;
+}
+`;
 
 
 export const HomeHeadeTitleText = styled.h2`
 text-align: center;
 font-weight:bold;
 font-size: 35px;
-color:#cfcaca2d;
-background-color: #ffffff11;
+color:#cfcacad3;
+/* background-color: #ffffff11; */
 @media(max-width:768px){
 font-size:30.99px;
-color:#fafafaba;
+color:#fafafab0;
+width: 100%;
 }
 `;
 
