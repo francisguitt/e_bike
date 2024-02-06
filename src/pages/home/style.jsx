@@ -221,66 +221,56 @@ export const HomeInfos = styled.article`
 /* background-color: red; */
 `;
 
-export const HomeInfosTitle = styled.div``;
+export const HomeInfosTitle = styled.div`
+text-align: center;
+padding: 10px;
+background:#dddddd22;
+max-width: 1280px;
+width: 100%;
+margin: auto;
+`;
+
+
 export const HomeInfosTitleText = styled.h2`
 text-transform: capitalize;
-color: #ddddddc7;
+color: #ddddddc3;
 `
-
-export const HomeDetails = styled.details`
-//seria details
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center; 
-flex: 1;
-border: 1px solid #00000013;
-padding: 6px;
-width: 100%;
-background:#FFFFFF;
-@media (max-width:768px) {
- display: flex;
-justify-content: center;
-align-items: center;
-text-align: center; 
-flex: 1;
-border: 1px solid #00000013;
-padding: 6px;
-margin: auto;
-width: 90%;
-background:#FFFFFF;
-}
-`;
 
 export const HomeDetailsArea = styled.div`
 display: flex;
-flex-direction: row;
-width: 100%;
-background-color: #ffffff;
-`;
-
-export const HomeDetailsSumary = styled.summary`
-//seria sumary
-display: flex;
 justify-content: center;
 align-items: center;
-text-align: center;
-font-size: 17.99px;
-font-weight: bold;
-color: #00000088;
-/* background:#ddddddb5; */
-text-transform: capitalize;
+flex-direction: column;
+/* gap: 1rem; */
+max-width: 1280px;
+width: 90%;
+margin: auto;
+/* background:#ffffff4e; */
+`;
+
+export const HomeDetails = styled.details`
+   display: flex;
+   justify-content: center;
+   align-items:center;
+  text-align: center;
+  margin-top:1rem;
+`;
+
+
+export const HomeDetailsSumary = styled.summary`
+color: #ffffff99;
+font-size: 18.99px;
 `;
 
 
 export const HomeDetailsParagraphLis = styled.li`
 margin-top:2rem;
 font-weight: 900;
-color: #0b1110df;
+color: #f2f5f4ce;
 text-transform: capitalize;
 `;
 
 export const HomeDetailsParagraph = styled.p`
 font-size: 13px;
-color: #131212c6;
+color: #ffffffbe;
 `;
