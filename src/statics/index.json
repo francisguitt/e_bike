@@ -1,0 +1,41 @@
+{
+    "items2": [
+        {
+            "id": 1,
+            "name": "Com um amigo",
+            "image": "public/bk1.jpeg",
+            "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+        },
+        {
+            "id": 2,
+            "name": "Com um amigo",
+            "image": "public/bk2.jpeg",
+            "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+        },
+     
+        {
+            "id": 4,
+            "name": "Com um amigo",
+            "image": "public/bk4.jpeg",
+            "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+        },
+        {
+            "id": 5,
+            "name": "Com um amigo",
+            "image": "public/bk5.jpeg",
+            "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+        },
+        {
+            "id": 6,
+            "name": "Com um amigo",
+            "image": "public/bk6.jpeg",
+            "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+        },
+        {
+            "id": 7,
+            "name": "Com um amigo",
+            "image": "public/bk7.jpeg",
+            "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+        }
+    ]
+}

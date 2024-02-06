@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Todo-o-terreno",
+      "image": "https://www.fatfishbikes.com.au/cdn/shop/files/DSC00512_copy.jpg?height=333&v=1707115288&width=500",
+      "description": "Os pneus grossos facilitam o trabalho em quase todos os terrenos e um potente motor de 750 W leva você aonde quer que vá com facilidade."
+    },
+    {
+      "id": 2,
+      "name": "Cidade e viajante",
+      "image": "https://www.fatfishbikes.com.au/cdn/shop/files/DSC00470_copy_2.jpg?height=333&v=1707115171&width=500",
+      "description": "Explore sua vizinhança como nunca antes. Você não conseguirá tirar o sorriso do rosto navegando pela cidade."
+    },
+    {
+      "id": 3,
+      "name": "Com um amigo",
+      "image": "https://www.fatfishbikes.com.au/cdn/shop/files/DSC08719_copy_2s.jpg?height=333&v=1695943493&width=500",
+      "description": "O assento duplo acomoda confortavelmente duas pessoas. Agora não há desculpa para anda"
+    }
+  ]
+}
+
