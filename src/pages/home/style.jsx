@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 export const HomeHedaer = styled.div`
-padding:10px;
+/* padding:10px; */
 `;
 
 export const HomeHeaderPicture = styled.div`
@@ -26,14 +26,16 @@ display: flex;
 
 export const HomeHeaderTitle = styled.div``;
 
+
 export const HomeHeadeTitleText = styled.h2`
 text-align: center;
 font-weight:bold;
 font-size: 35px;
-color:#cfcacad3;
+color:#cfcaca2d;
+background-color: #ffffff11;
 @media(max-width:768px){
 font-size:30.99px;
-color:#cfcacad3;
+color:#fafafaba;
 }
 `;
 
@@ -82,7 +84,7 @@ export const HomeSliderImage = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
 `;
 
@@ -168,17 +170,25 @@ export const HomePictureBox = styled.div`
 `;
 
 export const HomePreviewImg = styled.img`
-   width: 110%;
+   width: 80%;
     max-width: 400px; 
     border-top-right-radius:10px;
     border-top-left-radius:10px;
     margin-top: 1rem;
+
+    @media (max-width:768px){
+        width: 110%;
+    max-width: 400px; 
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    margin-top: 1rem;
+}
 `;
 
 export const HomeTitleArea = styled.div`
-margin:0 15px;
+/* margin:0 15px; */
 background: #dddddd1c;
-width: 101%;
+width: 80%;
 @media (max-width:768px){
     width: 110%; 
 }
@@ -194,4 +204,74 @@ margin-left: 1rem;
 export const HomeDescription = styled.p`
 color: #ddddddc3;
 margin-left: 1rem;
+`;
+
+// _________________________________
+
+export const HomeInfos = styled.article`
+/* background-color: red; */
+`;
+
+export const HomeInfosTitle = styled.div``;
+export const HomeInfosTitleText = styled.h2`
+text-transform: capitalize;
+color: #ddddddc7;
+`
+
+export const HomeDetails = styled.details`
+//seria details
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center; 
+flex: 1;
+border: 1px solid #00000013;
+padding: 6px;
+width: 100%;
+background:#FFFFFF;
+@media (max-width:768px) {
+ display: flex;
+justify-content: center;
+align-items: center;
+text-align: center; 
+flex: 1;
+border: 1px solid #00000013;
+padding: 6px;
+margin: auto;
+width: 90%;
+background:#FFFFFF;
+}
+`;
+
+export const HomeDetailsArea = styled.div`
+display: flex;
+flex-direction: row;
+width: 100%;
+background-color: #ffffff;
+`;
+
+export const HomeDetailsSumary = styled.summary`
+//seria sumary
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 17.99px;
+font-weight: bold;
+color: #00000088;
+/* background:#ddddddb5; */
+text-transform: capitalize;
+`;
+
+
+export const HomeDetailsParagraphLis = styled.li`
+margin-top:2rem;
+font-weight: 900;
+color: #0b1110df;
+text-transform: capitalize;
+`;
+
+export const HomeDetailsParagraph = styled.p`
+font-size: 13px;
+color: #131212c6;
 `;

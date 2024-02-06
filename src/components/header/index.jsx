@@ -5,7 +5,7 @@ export const Header = () => {
         <>
             <C.HeaderTop>
                 <C.HeaderTopArea>
-                    <C.HeaderTopTitle>erico-bikes</C.HeaderTopTitle>
+                    <C.HeaderTopTitle>ebike-global</C.HeaderTopTitle>
                 </C.HeaderTopArea>
             </C.HeaderTop>
         </>
