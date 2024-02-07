@@ -112,8 +112,9 @@ export const HomeSliderBox = styled.div`
 export const HomeSliderPreviewImg = styled.img`
     width: 100%;
     max-width: 400px; 
-    /* border-radius: 10px; */
     margin-top: 1rem;
+    border-top-left-radius:10px;
+   border-top-right-radius:10px;
 `;
 
 
@@ -143,30 +144,35 @@ margin-left: 1rem;
 export const HomePreview = styled.div`
 display: flex;
 justify-content: center;
-align-items: center;
-flex-wrap: wrap;
 gap: 1rem;
+max-width: 1280px;
+width: 100%;
+margin: auto;
+ @media (max-width:768px) {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0;
+} 
 `;
+
+export const HomePreviewControler = styled.div`
+ display: flex;
+ justify-content: center;
+`;
+
 
 export const HomePreviewArea = styled.div`
-display: flex;
-`;
 
-export const HomePicture = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 6px;
-border-radius: 6px;
-/* background-color: #555555; */
+
 @media(max-width:768px){
-    display: flex;
-    flex-direction: column;
+    max-width: 450px;
+    padding: 0;
 }
 `;
 
 export const HomePictureBox = styled.div`
-  display: flex;
+@media (max-width:768px){
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -174,20 +180,17 @@ export const HomePictureBox = styled.div`
     width: 90%; 
     padding: 10px;
     max-width: 400px;
-    margin: 10px; 
-
+    margin: 10px;   
+}
 `;
 
 export const HomePreviewImg = styled.img`
-   width: 80%;
-    max-width: 400px; 
-    border-top-right-radius:10px;
-    border-top-left-radius:10px;
-    margin-top: 1rem;
-
+max-width: 250px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
     @media (max-width:768px){
-        width: 110%;
-    max-width: 400px; 
+     width: 110%;
+    max-width: 450px; 
     border-top-right-radius:10px;
     border-top-left-radius:10px;
     margin-top: 1rem;
@@ -195,11 +198,13 @@ export const HomePreviewImg = styled.img`
 `;
 
 export const HomeTitleArea = styled.div`
-/* margin:0 15px; */
-background: #dddddd1c;
-width: 80%;
+background-color: #dddddd1c;
+padding: 6px;
+max-width: 240px;
+width: 100%;
 @media (max-width:768px){
-    width: 110%; 
+    max-width:395px;
+    width: 110%;
 }
 `;
 
@@ -212,64 +217,4 @@ margin-left: 1rem;
 export const HomeDescription = styled.p`
 color: #ddddddc3;
 margin-left: 1rem;
-`;
-
-// _________________________________
-
-export const HomeInfos = styled.article`
-/* background-color: red; */
-`;
-
-export const HomeInfosTitle = styled.div`
-text-align: center;
-padding: 10px;
-background:#dddddd22;
-max-width: 1280px;
-width: 100%;
-margin: auto;
-`;
-
-
-export const HomeInfosTitleText = styled.h2`
-text-transform: capitalize;
-color: #ddddddc3;
-`
-
-export const HomeDetailsArea = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-/* gap: 1rem; */
-max-width: 1280px;
-width: 90%;
-margin: auto;
-/* background:#ffffff4e; */
-`;
-
-export const HomeDetails = styled.details`
-   display: flex;
-   justify-content: center;
-   align-items:center;
-  text-align: center;
-  margin-top:1rem;
-`;
-
-
-export const HomeDetailsSumary = styled.summary`
-color: #ffffff99;
-font-size: 18.99px;
-`;
-
-
-export const HomeDetailsParagraphLis = styled.li`
-margin-top:2rem;
-font-weight: 900;
-color: #f2f5f4ce;
-text-transform: capitalize;
-`;
-
-export const HomeDetailsParagraph = styled.p`
-font-size: 13px;
-color: #ffffffbe;
 `;
