@@ -10,6 +10,7 @@ import picture from '../../assets/bike.webp';
 import imagesData from '../../data';
 import staticDataImages from '../../statics';
 import * as C from './style';
+import { VideoDemo } from '../../videos';
 
 export const Home = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -27,7 +28,7 @@ export const Home = () => {
     }, []);
 
 
-    
+
     return (
         <>
             <Header />
@@ -84,24 +85,23 @@ export const Home = () => {
 
             <C.HomePreview>
                 {staticDataImages.items2.map((item) => (
-                    <Link style={{ textDecoration: "none" }}>
-                        <C.HomePreviewArea key={item.id}>
-                            <C.HomePicture>
-                                <C.HomePictureBox>
-                                    <C.HomePreviewImg src={item.image} alt='imagens' />
-                                    <C.HomeTitleArea>
-                                        <C.HomeTitle>{item.name}</C.HomeTitle>
-                                        <C.HomeDescription>{item.description}</C.HomeDescription>
-                                    </C.HomeTitleArea>
-                                </C.HomePictureBox>
-                            </C.HomePicture>
-                        </C.HomePreviewArea>
-                    </Link>
+                    // <Link style={{ textDecoration: "none" }}>
+                    <C.HomePreviewArea key={item.id}>
+                        <C.HomePicture>
+                            <C.HomePictureBox>
+                                <C.HomePreviewImg src={item.image} alt='imagens' />
+                                <C.HomeTitleArea>
+                                    <C.HomeTitle>{item.name}</C.HomeTitle>
+                                    <C.HomeDescription>{item.description}</C.HomeDescription>
+                                </C.HomeTitleArea>
+                            </C.HomePictureBox>
+                        </C.HomePicture>
+                    </C.HomePreviewArea>
+                    // </Link>
                 ))}
             </C.HomePreview>
-
-
-
+            <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Video Demontração</h2>
+            <VideoDemo />
             <C.HomeInfos>
                 <C.HomeInfosTitle>
                     <C.HomeInfosTitleText>
@@ -199,46 +199,58 @@ export const Home = () => {
                             </C.HomeDetailsParagraphLis>
                             <C.HomeDetailsParagraph>25kg sem bateria, 33kg com bateria
                             </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
+                            <C.HomeDetailsParagraphLis>Punhos
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>Punhos ergonômicos de imitação de couro duráveis
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Guiador
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>em alumínio personalizado, 700 mm de largura, elevação de 4"
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Caixa de direção
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>semi-integrada, tubo de direção reto de 1-1/8"
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Kickstand
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>Alumínio resistente com pé largo de plástico
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Pedais
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>eixo CrMo, plataforma em alumínio forjado com refletores, rosca padrão 9/16" x 20 TPI
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Racks
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>Opcionais
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Aros Liga
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>de alumínio de parede dupla, 36 furos Largura do aro: 75 mm
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Selim
+                            </C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>Assento ergonômico com alça de elevação
+                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>
                             </C.HomeDetailsParagraphLis>
                             <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
                             </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
+                            <C.HomeDetailsParagraphLis>Espigão de selim
                             </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
+                            <C.HomeDetailsParagraph>390 mm x 27,2 mm
                             </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
+                            <C.HomeDetailsParagraphLis>Grampo do espigão de selim
                             </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
+                            <C.HomeDetailsParagraph>Liberação rápida
                             </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
-                            <C.HomeDetailsParagraphLis>Roda livre
-                            </C.HomeDetailsParagraphLis>
-                            <C.HomeDetailsParagraph>Shimano 7 marchas e desviador ALTUS
-                            </C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Shifter</C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>de 7 velocidades com polegar</C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Raios</C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>em aço inoxidável calibre 12, preto</C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Haste</C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>50 mm + 30º (aumento de 15 mm)</C.HomeDetailsParagraph>
+                            <C.HomeDetailsParagraphLis>Pneus</C.HomeDetailsParagraphLis>
+                            <C.HomeDetailsParagraph>20x4in CST</C.HomeDetailsParagraph>
                         </C.HomeDetails>
                     </C.HomeDetailsArea>
                 </C.HomeDetailsArea>

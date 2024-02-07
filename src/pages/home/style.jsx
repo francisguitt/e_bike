@@ -206,7 +206,6 @@ width: 80%;
 export const HomeTitle = styled.h2`
 color: #dad7d7;
 margin-left: 1rem;
-
 `;
 
 

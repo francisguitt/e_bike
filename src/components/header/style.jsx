@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderTop = styled.header`
 padding: 6px;
-border: 1px solid #dddddd1f;
-
-
+/* border: 1px solid #dddddd1f; */
 `;
 
 export const HeaderTopArea = styled.div`
