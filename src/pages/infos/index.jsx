@@ -63,7 +63,7 @@ export const Infos = () => {
 
                     <C.HomeDetailsArea>
                         <C.HomeDetails>
-                            <C.HomeDetailsSumary>componentes</C.HomeDetailsSumary>
+                            <C.HomeDetailsSumary>Componentes</C.HomeDetailsSumary>
                             <C.HomeDetailsParagraphLis>Pinças de freio</C.HomeDetailsParagraphLis>
                             <C.HomeDetailsParagraph>Pinças de freio hidráulicas
                             </C.HomeDetailsParagraph>
