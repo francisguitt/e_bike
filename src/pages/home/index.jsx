@@ -105,7 +105,7 @@ export const Home = () => {
                     </C.HomePreviewControler>
                 ))}
             </C.HomePreview>
-            <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Video Demontração</h2>
+            <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Videos Demonstração</h2>
             <VideoDemo />
 
             <ButtonPrimary handleNavigation={handleNavigation} />
