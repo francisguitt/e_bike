@@ -13,6 +13,7 @@ import * as C from './style';
 import { VideoDemo } from '../../videos';
 import { ButtonPrimary } from '../../components/Buttons/buttonPrimary';
 import { ButtonSecundary } from '../../components/Buttons/buttonSecundary';
+import { Store } from '../store';
 
 export const Home = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -97,6 +98,7 @@ export const Home = () => {
                                         <C.HomeTitleArea>
                                             <C.HomeTitle>{item.name}</C.HomeTitle>
                                             <C.HomeDescription>{item.description}</C.HomeDescription>
+                                            {/* <ButtonSecundary/> */}
                                         </C.HomeTitleArea>
                                     </C.HomePictureBox>
                         </C.HomePreviewArea>
@@ -106,9 +108,8 @@ export const Home = () => {
             <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Video Demontração</h2>
             <VideoDemo />
 
-
-
             <ButtonPrimary handleNavigation={handleNavigation} />
+<Store/>
 
         </>
     )
