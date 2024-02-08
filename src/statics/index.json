@@ -13,6 +13,12 @@
             "description": "Tenha com você a todo tempo uma bike portatil, agíl,eficiente, e que percorre longas distancias"
         },
         {
+            "id": 3,
+            "name": "H100",
+            "image": "https://inow2.inoovamkt.com.br/wp-content/uploads/2024/02/H100-Amarela-com-somba-sem-fundo-600x598.webp",
+            "description": "Muito mais do que apenas andar de bicicleta, a Inow traz um novo estilo de vida para seus usuários"
+        },
+        {
             "id": 4,
             "name": "BK-V9",
             "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTO6gxvVcHbwO4Lom_ufSMqdl7YkLQoQZuGOGZOnJHhoc9gTGIXfNb3Tbed-xR-j3DEyNzFfgQ8-7j3eNw-caS-YMqEebNbQ9n_hHc41qeu1NcqwAYcdHvbiw&usqp=CAE",
@@ -26,6 +32,12 @@
         },
         {
             "id": 6,
+            "name": "BK-500",
+            "image": "https://inow2.inoovamkt.com.br/wp-content/uploads/2024/02/BK500-Sem-fundo-com-sombra-1024x646.png",
+            "description": "Seja na cidade ou no campo, a BK-500 tem a potencia e a velocidade que te levam a qualquer lugar."
+        },
+        {
+            "id": 7,
             "name": "Visor colorido",
             "image": "https://www.fatfishbikes.com.au/cdn/shop/files/DSC09548_copy.jpg?height=823&v=1704670236&width=823",
             "description": "LCD retroiluminado com indicador de carga, velocímetro, hodômetro, hodômetro parcial, nível de assistência ao pedal, relógio e muito mais"

@@ -1,31 +1,39 @@
-import styled from 'styled-components';
 
-const VideoArea = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
-  border: 0;
-`;
 
-export const StyledVideo = styled.iframe`
-border: 0;
-  width: 100%;
-  max-width: 800px;
-  height: 450px; /* Ajuste a altura conforme necessário */
-`;
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css';
+import * as C from './styles';
+import dataVideos from './videoData.json';
 
 export const VideoDemo = () => {
-    return (
-        <VideoArea>
-            <StyledVideo
-                src="https://www.youtube.com/embed/72PpppKKh4o"
-                title="Video Demontração E-bike inow"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            ></StyledVideo>
-        </VideoArea>
-    );
+  return (
+    <C.VideoSlider>
+      <C.HomeSliderImage>
+        <Swiper
+          spaceBetween={4}
+          slidesPerView={1}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {dataVideos.data_videos.map((item) => (
+            <SwiperSlide key={item.id}>
+              <C.VideoArea>
+                <C.StyledVideo
+                  src={item.src} 
+                  title={item.title}
+                  allow={item.allow}
+                  allowFullScreen={item.allowFullScreen}
+                ></C.StyledVideo>
+              </C.VideoArea>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </C.HomeSliderImage>
+    </C.VideoSlider>
+  );
 };
+
+

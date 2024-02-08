@@ -1,0 +1,25 @@
+{
+    "data_videos": [
+        {
+            "id": 1,
+            "src": "https://youtube.com/embed/0Mr7veeU1CM",
+            "title": "Video Demontração E-bike inow",
+            "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+            "allowFullScreen": ""
+        },
+        {
+            "id": 2,
+            "src": "https://www.youtube.com/embed/72PpppKKh4o",
+            "title": "Video Demontração E-bike inow",
+            "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+            "allowFullScreen": ""
+        },
+        {
+            "id": 3,
+            "src": "https://www.youtube.com/embed/5JpLAr5-KBs",
+            "title": "Video Demontração E-bike inow",
+            "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+            "allowFullScreen": ""
+        }
+    ]
+}

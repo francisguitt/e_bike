@@ -143,6 +143,7 @@ margin-left: 1rem;
 
 export const HomePreview = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 gap: 1rem;
 max-width: 1280px;
@@ -162,7 +163,6 @@ export const HomePreviewControler = styled.div`
 
 
 export const HomePreviewArea = styled.div`
-
 
 @media(max-width:768px){
     max-width: 450px;

@@ -4,6 +4,7 @@ import { Timer } from '../../icons';
 import park from '../../assets/park.webp';
 
 export const StoreContainer = styled.div`
+display: flex;
 max-width: 1280px;
 width: 100%;
 height: 50vh;
@@ -17,18 +18,19 @@ background-image: url(${park});
 
 export const StoreContainerTitle = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   max-width: 1280px;
   width: 100%;
-  margin: auto;
-  /* background-color: #babcbdd3; */
+@media (max-width:768px){
+  max-width: 1280px;
+  width: 100%;
+}
 `;
 
 export const StoreContainerTitleText = styled.h1`
-  font-size: 40px;
-  color: #f8f8f8c5;
+  font-size: 35px;
+  color: #f8f8f8f4;
   padding: 10px;
   background-color: #000000be;
 `;
