@@ -22,7 +22,7 @@ export const VideoDemo = () => {
             <SwiperSlide key={item.id}>
               <C.VideoArea>
                 <C.StyledVideo
-                  src={item.src} 
+                  src={item.video} 
                   title={item.title}
                   allow={item.allow}
                   allowFullScreen={item.allowFullScreen}

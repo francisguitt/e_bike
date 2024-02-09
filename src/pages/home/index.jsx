@@ -11,8 +11,8 @@ import imagesData from '../../data';
 import staticDataImages from '../../statics';
 import * as C from './style';
 import { VideoDemo } from '../../videos';
-import { ButtonPrimary } from '../../components/Buttons/buttonPrimary';
 import { ButtonSecundary } from '../../components/Buttons/buttonSecundary';
+import { ButtonPrimary } from '../../components/Buttons/buttonPrimary';
 import { Store } from '../store';
 
 export const Home = () => {
@@ -30,10 +30,14 @@ export const Home = () => {
         };
     }, []);
 
-    const navigator = useNavigate();
+
+
+    const navigate = useNavigate();
     const handleNavigation = () => {
-        navigator('/Infos');
+        navigate('/Infos');
     }
+
+
 
     return (
         <>
@@ -77,7 +81,7 @@ export const Home = () => {
                 <C.HomeSlider>
                     <C.HomeSliderImage>
                         {imagesData.items.map((item) => (
-                            <C.HomeSliderBox>
+                            <C.HomeSliderBox key={item.id}>
                                 <C.HomeSliderPreviewImg src={item.image} alt="imagens dos items" />
                                 <C.HomeSliderTitleArea>
                                     <C.HomeSliderTitle>{item.name}</C.HomeSliderTitle>
@@ -91,16 +95,16 @@ export const Home = () => {
 
             <C.HomePreview>
                 {staticDataImages.items2.map((item) => (
-                    <C.HomePreviewControler>
-                        <C.HomePreviewArea key={item.id}>
-                                    <C.HomePictureBox>
-                                        <C.HomePreviewImg src={item.image} alt='imagens' />
-                                        <C.HomeTitleArea>
-                                            <C.HomeTitle>{item.name}</C.HomeTitle>
-                                            <C.HomeDescription>{item.description}</C.HomeDescription>
-                                            {/* <ButtonSecundary/> */}
-                                        </C.HomeTitleArea>
-                                    </C.HomePictureBox>
+                    <C.HomePreviewControler key={item.id}>
+                        <C.HomePreviewArea>
+                            <C.HomePictureBox>
+                                <C.HomePreviewImg src={item.image} alt='imagens' />
+                                <C.HomeTitleArea>
+                                    <C.HomeTitle>{item.name}</C.HomeTitle>
+                                    <C.HomeDescription>{item.description}</C.HomeDescription>
+                                    <Link to={`/products/${item.name}`} style={{textDecoration:"none"}}>{item.button && <ButtonSecundary props={item.button} />}</Link>
+                                </C.HomeTitleArea>
+                            </C.HomePictureBox>
                         </C.HomePreviewArea>
                     </C.HomePreviewControler>
                 ))}
@@ -109,7 +113,7 @@ export const Home = () => {
             <VideoDemo />
 
             <ButtonPrimary handleNavigation={handleNavigation} />
-<Store/>
+            <Store />
 
         </>
     )

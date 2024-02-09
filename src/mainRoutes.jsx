@@ -3,6 +3,7 @@ import GlobalStyle from "./globalStyle"
 import { Routes, Route, } from 'react-router-dom';
 import { Home } from "./pages/home"
 import { Infos } from '../src/pages/infos';
+import { Product } from "./pages/products";
 export const MainRoutes = () => {
     return (
         <>
@@ -10,6 +11,7 @@ export const MainRoutes = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Infos" element={<Infos />} />
+                <Route path="/products/:slug" element={<Product />} />
             </Routes>
 
             <GlobalStyle />
