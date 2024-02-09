@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 
-export const WhatsAppButtonContainer = styled.div``;
+export const WhatsAppButtonContainer = styled.div`
+height: 100vh;
+background-color: #ddd;
+`;
 
 export const WhatsAppButtonParagraph = styled.p`
 text-align: center;
-color: #f1f1f1;
+color: #000000;
 `;
 
 export const WhatsAppButtonArea = styled.div`
@@ -40,7 +43,7 @@ export const WhatsAppButtonTitle = styled.div`
 `;
 
 export const WhatsAppButtonTitleText = styled.h2`
-color: #ddd;
+color: #0f0606;
 font-size: 30px;
 text-align: center;
 @media (max-width:768px) {
