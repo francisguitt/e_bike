@@ -1,20 +1,24 @@
 
 import * as C from './style';
-import {FloatingWhatsApp} from '../../components/whatsapFloating';
+import { FloatingWhatsApp } from '../../components/whatsapFloating';
+import { Link } from 'react-router-dom';
 export const Footer = () => {
-    const linkUrl = "https://www.instagram.com/guittzoom/";
+    const linkAuthor = "https://www.instagram.com/guittzoom";
+    const linkFacebook = "https://www.facebook.com/";
+    const linkInstagram = "https://www.instagram.com/";
+    const LinkTwiter = "https://www.twitter.com/";
     return (
 
         <>
             <C.FooterContainer>
-                <FloatingWhatsApp/>
+                <FloatingWhatsApp />
                 <C.FooterContent>
                     <C.FooterContentInfos>
                         <C.FooterIcons>
-                            <C.FacebookIcons />
+                            <Link to={linkFacebook}><C.FacebookIcons /></Link>
+                            <Link to={linkInstagram}><C.InstagramIcons /></Link>
+                            <Link to={LinkTwiter}><C.TwitterIcons /></Link >
                         </C.FooterIcons>
-                        <C.InstagramIcons />
-                        <C.TwitterIcons />
                     </C.FooterContentInfos>
                     <C.FooterRightReserved>
                         <C.FooterRightReservedText>
@@ -23,7 +27,7 @@ export const Footer = () => {
                     </C.FooterRightReserved>
                     <C.FooterAuthor>
                         <C.FooterAuthorText
-                            href={linkUrl}>
+                            href={linkAuthor}>
                             Desenvolvido com
                             <C.IconHeart>  &#10084;  </C.IconHeart>
                             por guittzoom</C.FooterAuthorText>
