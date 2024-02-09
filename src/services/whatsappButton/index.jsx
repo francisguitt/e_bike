@@ -4,7 +4,7 @@ import { ButtonSucess } from '../../components/Buttons/buttonSucess';
 import { ButtonWarning } from '../../components/Buttons/buttonWarning';
 export const WhatsAppButton = ({ itemName }) => {
 
-    const phoneNumber = "11977838504"
+    const phoneNumber = "5511977838504"
     const handleWhatsAppClick = () => {
         const whatsappMessage = `Olá! Estou Interesado na  Bike ${itemName}`;
         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
