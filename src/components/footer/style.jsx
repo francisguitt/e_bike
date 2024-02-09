@@ -69,7 +69,7 @@ text-align: center;
 
 
 export const FooterAuthorText = styled.a`
-  color: #1d1f1d7d;
+  color: #1d1f1dcf;
   font-size: 13.99px;
   text-decoration: none;
 `;
