@@ -16,7 +16,7 @@ export const Contacts = () => {
                     <C.ContactsArrowLeft>
                         <C.ArrowBack onClick={handleNavigate}/>
                     </C.ContactsArrowLeft>
-                    <C.ContactsText>Nossos Contatos</C.ContactsText>
+                    <C.ContactsText> Contatos e endereços</C.ContactsText>
                 </C.ContactsAreaTitle>
                 <C.ContactsContainer>
                     <C.ContactsContainerText>
