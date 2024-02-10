@@ -20,13 +20,13 @@ export const Contacts = () => {
                 </C.ContactsAreaTitle>
                 <C.ContactsContainer>
                     <C.ContactsContainerText>
-                        <C.PhoneNumber />fASFAFASFSAFF
+                        <C.PhoneNumber />: (99) 999999999
                     </C.ContactsContainerText>
                     <C.ContactsContainerText>
-                        <C.WhatsapNumber />SAFSAFASFASFSAF
+                        <C.WhatsapNumber />: (99) 999999999
                     </C.ContactsContainerText>
                     <C.ContactsContainerText>
-                        <C.CiteAdreass />ASFasfsafafasf
+                        <C.CiteAdreass />: Barueri Sp
                     </C.ContactsContainerText>
                 </C.ContactsContainer>
             </C.ContactsArea>
