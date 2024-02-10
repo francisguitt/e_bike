@@ -5,6 +5,8 @@ import { FacebookIcon, Instagram, Twitter } from '../../icons';
 
 export const FooterContainer = styled.footer`
 background-color: #535353b3;
+/* background-color: #ffffff; */
+/* background-color: transparent; */
 padding: 10px;
 `;
 
@@ -33,7 +35,7 @@ text-align: center;
 export const FacebookIcons = styled(FacebookIcon)`
 font-size: 40px;
 margin:0 5px;
-color: #0c0c53fd;
+color: #0b94f0;
 `
 export const InstagramIcons = styled(Instagram)`
 font-size: 40px;

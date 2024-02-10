@@ -1,5 +1,5 @@
 
-import { Link, Routes, Route, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
@@ -14,7 +14,7 @@ import { VideoDemo } from '../../videos';
 import { ButtonSecundary } from '../../components/Buttons/buttonSecundary';
 import { ButtonPrimary } from '../../components/Buttons/buttonPrimary';
 import { Store } from '../store';
-
+import { VerticalMenu } from '../../components/vertical_menu';
 export const Home = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 

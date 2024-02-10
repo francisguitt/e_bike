@@ -2,6 +2,7 @@
 
 import styled from "styled-components";
 export const HomeHedaer = styled.div`
+margin-top:4rem;
 /* padding:10px; */
 `;
 
