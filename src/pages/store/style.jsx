@@ -7,6 +7,7 @@ export const StoreContainer = styled.div`
 display: flex;
 max-width: 1280px;
 width: 100%;
+/* height: 50vh; */
 height: 50vh;
 margin: auto;
 background-image: url(${park});

@@ -3,17 +3,22 @@ import GlobalStyle from "./globalStyle"
 import { Routes, Route, } from 'react-router-dom';
 import { Home } from "./pages/home"
 import { Infos } from '../src/pages/infos';
+import { VideoDemo } from "./videos";
 import { Product } from "./pages/products";
-// import { VerticalMenu } from './components/vertical_menu';
+import { About } from "./pages/about";
 import { Footer } from "./components/footer";
+import { Contacts } from "./pages/contacts";
 
 export const MainRoutes = () => {
     return (
         <>
-        
+
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Infos" element={<Infos />} />
+                <Route path="/infos" element={<Infos />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/videos" element={<VideoDemo />} />
                 <Route path="/products/:slug" element={<Product />} />
             </Routes>
             <Footer />

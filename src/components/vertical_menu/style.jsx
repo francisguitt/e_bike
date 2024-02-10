@@ -30,26 +30,34 @@ export const VerticalMenuArea = styled.div`
 
 
 export const MenuVerticalNavLink = styled.nav`
-position: fixed;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fffffcf9;
   width: 100%;
   height: 80px;
  z-index: 999;
-  @media (max-width:768px) {
+
+   @media (max-width:768px) {
     display: flex;
+    justify-content: stretch;
     width: 100%;
     height: 5rem;
     margin:4.1rem 0;
+    display: flex;
+    justify-content: center;
   }
 `;
 
 
 export const VerticalMenuLink = styled(Link)`
-margin-top: 2rem;
-margin: 0px 1em;
-color: red;
-text-decoration: none;
+     margin-top: 2rem;
+    margin: 0 10px;
+    font-size: 20px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: ${({ selected }) => (selected ? '#070c0ece' : '#1b7509dc')};
+
 `;

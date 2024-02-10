@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 import { FacebookIcon, Instagram, Twitter } from '../../icons';
 
-
 export const FooterContainer = styled.footer`
-background-color: #535353b3;
-/* background-color: #ffffff; */
-/* background-color: transparent; */
-padding: 10px;
+max-width: 1280px;
+width: 100%;
+margin: auto;
+background-color: #3d3c3c;
+padding: 10;
 `;
 
 export const FooterContent = styled.div`
@@ -26,11 +26,9 @@ display: flex;
 padding: 10px;
 `;
 
-
 export const FooterIcons = styled.div`
 text-align: center;
 `;
-
 
 export const FacebookIcons = styled(FacebookIcon)`
 font-size: 40px;

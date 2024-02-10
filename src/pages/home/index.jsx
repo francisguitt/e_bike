@@ -37,8 +37,6 @@ export const Home = () => {
         navigate('/Infos');
     }
 
-
-
     return (
         <>
             <Header />
@@ -102,7 +100,7 @@ export const Home = () => {
                                 <C.HomeTitleArea>
                                     <C.HomeTitle>{item.name}</C.HomeTitle>
                                     <C.HomeDescription>{item.description}</C.HomeDescription>
-                                    <Link to={`/products/${item.name}`} style={{textDecoration:"none"}}>{item.button && <ButtonSecundary props={item.button} />}</Link>
+                                    <Link to={`/products/${item.name}`} style={{ textDecoration: "none" }}>{item.button && <ButtonSecundary props={item.button} />}</Link>
                                 </C.HomeTitleArea>
                             </C.HomePictureBox>
                         </C.HomePreviewArea>

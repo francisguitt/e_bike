@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HomeInfos = styled.article`
+height: 100vh;
 /* background-color: red; */
 margin-top: 1rem;
 `;
@@ -45,10 +46,13 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 /* gap: 1rem; */
-max-width: 1280px;
-width: 90%;
+/* max-width: 1280px; */
+width: 100%;
 margin: auto;
-/* background:#ffffff4e; */
+z-index: 999;
+@media (max-width:768px) {
+   width: 100%;
+}
 `;
 
 export const HomeDetails = styled.details`
@@ -57,11 +61,14 @@ export const HomeDetails = styled.details`
    align-items:center;
   text-align: center;
   margin-top:1rem;
+  width: 100%;
+  background-color: #474747;
 `;
 
 
 export const HomeDetailsSumary = styled.summary`
 color: #76a507;
+background-color: #07070783;
 font-size: 18.99px;
 `;
 
@@ -71,9 +78,11 @@ margin-top:2rem;
 font-weight: 900;
 color: #f2f5f4ce;
 text-transform: capitalize;
+z-index: 999;
 `;
 
 export const HomeDetailsParagraph = styled.p`
 font-size: 13px;
 color: #ffffffbe;
+z-index: 999.999;
 `;
