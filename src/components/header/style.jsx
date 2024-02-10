@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {MenuHamburger,Close} from '../../icons';
+
+
 export const HeaderTop = styled.header`
 position: fixed;
 top: 0;
@@ -10,6 +12,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 6px;
+max-width:1280px;
+width: 100%;
+margin: auto;
 background-color: #555454;
 box-shadow: 5px 6px 8px rgba(255, 255, 255, 0.1);
 `;

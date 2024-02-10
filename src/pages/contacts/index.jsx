@@ -5,7 +5,7 @@ export const Contacts = () => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-           navigate("/");
+        navigate("/");
     }
 
     return (
@@ -14,9 +14,9 @@ export const Contacts = () => {
             <C.ContactsArea>
                 <C.ContactsAreaTitle>
                     <C.ContactsArrowLeft>
-                        <C.ArrowBack onClick={handleNavigate}/>
+                        <C.ArrowBack onClick={handleNavigate} />
                     </C.ContactsArrowLeft>
-                    <C.ContactsText> Contatos e endereços</C.ContactsText>
+                    <C.ContactsText> Contatos</C.ContactsText>
                 </C.ContactsAreaTitle>
                 <C.ContactsContainer>
                     <C.ContactsContainerText>
