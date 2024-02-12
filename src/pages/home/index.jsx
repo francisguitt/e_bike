@@ -125,9 +125,9 @@ export const Home = () => {
                 <C.HomePreviewArea_2>
                     <C.HomePictureBox_2>
                         <C.HomePreviewImg src={bike_bk500} alt='imagens' />
-                        <C.HomeTitleArea_2>
+                        <C.HomeTitleArea>
                             <Link onClick={handleWhatsAppClick} style={{ textDecoration: "none" }}><ButtonSecundary name="Comprar" /></Link>
-                        </C.HomeTitleArea_2>
+                        </C.HomeTitleArea>
                     </C.HomePictureBox_2>
 
                     <C.HomePictureBox_2>
