@@ -108,16 +108,16 @@ export const Home = () => {
                 </C.HomeSlider>
             )}
             <C.HeadLine>
-                <C.SubHeadline>
+                <C.HomeHeadeTitleText>
                     Descubra a Liberdade da Mobilidade Sustentável - Mais Rápido, Mais Longe, Sem Esforço.
-                </C.SubHeadline>
+                </C.HomeHeadeTitleText>
             </C.HeadLine>
 
             <C.HomePreview>
                 {staticDataImages.items2.map((item) => (
                     <C.HomePreviewControler key={item.id}>
                         <C.HomePreviewArea>
-                            <C.HomePictureBox>
+                            <C.HomePictureBox>' '
                                 <C.HomePreviewImg src={item.image} alt='imagem' />
                                 <C.HomeTitleArea>
                                     <C.HomeTitle>{item.name}</C.HomeTitle>

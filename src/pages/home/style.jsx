@@ -109,17 +109,6 @@ background-color: rgba(158, 156, 156, 0.315);
     }
 `;
 
-export const SubHeadline = styled.h2`
-     font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    color: #ffffffea;
-`;
-
-
-
 export const List = styled.ul`
 display: flex;
 flex-direction: column;
