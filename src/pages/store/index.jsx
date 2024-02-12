@@ -6,7 +6,7 @@ export const Store = () => {
     <>
       <C.StoreContainer>
         <C.StoreContainerTitle>
-          <C.StoreContainerTitleText>Em breve em Barueri!</C.StoreContainerTitleText>
+          {/* <C.StoreContainerTitleText>Em breve em Barueri!</C.StoreContainerTitleText> */}
           {/* <C.SpinningTimer />  */}
         </C.StoreContainerTitle>
       </C.StoreContainer>

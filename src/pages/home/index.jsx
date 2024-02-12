@@ -12,7 +12,7 @@ import * as C from './style';
 import { VideoDemo } from '../../videos';
 import { ButtonSecundary } from '../../components/Buttons/buttonSecundary';
 import { ButtonPrimary } from '../../components/Buttons/buttonPrimary';
-import { MainInfo } from '../mainInfos';
+import { ButtonDark } from '../../components/Buttons/buttonDark';
 import { Store } from '../store';
 
 import picture from '../../assets/ebikebunner.webp';
@@ -63,7 +63,11 @@ export const Home = () => {
                     </C.HomeHeadeTitleText>
                 </C.HomeHeaderTitle>
             </C.HomeHedaer>
-            <MainInfo />
+            <C.List>
+                <C.ListItem><C.Icon>🚀</C.Icon>Acelere Seu Dia: Fuja do trânsito e chegue mais rápido ao seu destino.</C.ListItem>
+                <C.ListItem><C.Icon>🔋</C.Icon>Autonomia Incrível: Bateria de longa duração para quilômetros sem fim.</C.ListItem>
+                <ButtonDark handleClick={handleWhatsAppClick} name="Garanta Já A Sua !" />
+            </C.List>
             {isMobile ? (
                 <C.HomeSlider>
                     <C.HomeSliderImage>
@@ -108,15 +112,20 @@ export const Home = () => {
                     Descubra a Liberdade da Mobilidade Sustentável - Mais Rápido, Mais Longe, Sem Esforço.
                 </C.SubHeadline>
             </C.HeadLine>
+
             <C.HomePreview>
                 {staticDataImages.items2.map((item) => (
                     <C.HomePreviewControler key={item.id}>
                         <C.HomePreviewArea>
                             <C.HomePictureBox>
-                                <C.HomePreviewImg src={item.image} alt='imagens' />
+                                <C.HomePreviewImg src={item.image} alt='imagem' />
                                 <C.HomeTitleArea>
                                     <C.HomeTitle>{item.name}</C.HomeTitle>
                                     <C.HomeDescription>{item.description}</C.HomeDescription>
+                                    <C.List>
+                                        <C.ListItem>{item.text}</C.ListItem>
+                                    </C.List>
+
                                     <Link to={`/products/${item.name}`} style={{ textDecoration: "none" }}>{item.button && <ButtonSecundary name={item.button} />}</Link>
                                 </C.HomeTitleArea>
                             </C.HomePictureBox>
@@ -124,6 +133,7 @@ export const Home = () => {
                     </C.HomePreviewControler>
                 ))}
             </C.HomePreview>
+
 
             <C.HomePreview_2>
                 <C.HomePreviewArea_2>
@@ -152,9 +162,18 @@ export const Home = () => {
 
             <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Videos Demonstração</h2>
             <VideoDemo />
+            <C.List>
+                <C.ListItem><C.Icon>💪</C.Icon>Poupe Energia: Pedale com facilidade, sem esforço desnecessário.</C.ListItem>
+                <C.ListItem><C.Icon>🌿</C.Icon>Eco-Friendly: Faça parte da mudança para um planeta mais verde.</C.ListItem>
+            </C.List >
+
             <ButtonPrimary handleNavigation={handleNavigation} />
             <Store />
-
+            <C.List>
+                <C.ListItem><C.Icon>🛠️</C.Icon>Manutenção Descomplicada: Design robusto e fácil de manter.</C.ListItem>
+                <C.ListItem><C.Icon>🌧️</C.Icon>Pronta para Desafios: Encare qualquer clima com nossa resistência superior.</C.ListItem>
+                <ButtonDark handleClick={handleWhatsAppClick} name="Garanta Já A Sua !" />
+            </C.List>
         </>
     )
 }

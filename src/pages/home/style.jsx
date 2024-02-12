@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 export const HomeHedaer = styled.div`
 margin-top:4rem;
-/* padding:10px; */
 `;
 
 export const HomeHeaderPicture = styled.div`
@@ -116,8 +115,47 @@ export const SubHeadline = styled.h2`
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
-    color: #fff;
+    color: #ffffffea;
 `;
+
+
+
+export const List = styled.ul`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #ffffff55;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 1280px;
+    width: 90%;
+    margin:10px  auto;
+`;
+
+export const ListItem = styled.li`
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    @media (max-width:768px) {
+        font-size: 18px;
+    }
+`;
+
+export const Icon = styled.span`
+    margin-right: 10px;
+    font-size: 30px;
+`;
+
+
 
 // HeadLine____________________________________
 
