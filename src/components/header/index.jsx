@@ -1,32 +1,4 @@
-// import { useState } from 'react';
-// import * as C from './style';
-// import { VerticalMenu } from '../vertical_menu';
 
-// export const Header = () => {
-
-//     const [isOpen, setIsOpen] = useState(false);
-//     const handleOpenMenu = () => {
-//         if (!isOpen) {
-//             // alert("o menu abriu")
-//             setIsOpen(true)
-//         } else {
-//             // alert("o menu fechou")
-//             setIsOpen(false);
-//         }
-//     }
-//     return (
-
-//         <>
-//             <C.HeaderTop>
-//                 <C.HeaderTopArea>
-//                     {isOpen ? <C.MenuClose onClick={handleOpenMenu} /> : <C.MenuHamburgerIcon onClick={handleOpenMenu} />}
-//                     <C.HeaderTopTitle>ebike-global</C.HeaderTopTitle>
-//                 </C.HeaderTopArea>
-//             </C.HeaderTop>
-//             {isOpen ? (<VerticalMenu />) : (null)}
-//         </>
-//     )
-// }
 import { useState, useEffect } from 'react';
 import * as C from './style';
 import { VerticalMenu } from '../vertical_menu';

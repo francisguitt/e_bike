@@ -1,52 +1,27 @@
 {
     "items2": [
+       
         {
             "id": 1,
-            "name": "CUSTOM V9",
-            "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSqUrRQ7llljSgbQYzme_mP0C80N2OETDqs76m3IbrzAmcQKp5F85iobRxqvvYd8l_Y3Rz1fN_7f8TBFiNfxE0r3-c7lqEVkm1dDNFjSzQubzSrQOW-Emns3A&usqp=CAE",
-            "description": "Seja na cidade ou no campo, a BK- V9 tem a potencia e a velocidade que te levam a qualquer lugar.",
+            "name": "H100",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_793242-MLB73456986066_122023-O.webp",
+            "description": "Tenha com você a todo tempo uma bike portatil, agíl,eficiente, e que percorre longas distancias",
             "button": "Comprar"
         },
+      
         {
             "id": 2,
-            "name": "H100",
-            "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0hxtGId-iEvHu2Rsb_ZoNIBLdxnfCtAnBYn0QBt-oeylCMYfTI2sEAJJChyCaQX8TVoAlujJ8VEpOJdyFUPpUz9-cHQD7vctCE9BqITnFxTJFhmoRlfMh&usqp=CAE",
-            "description": "Tenha com você a todo tempo uma bike portatil, agíl,eficiente, e que percorre longas distancias",
+            "name": "BK-V9",
+            "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTO6gxvVcHbwO4Lom_ufSMqdl7YkLQoQZuGOGZOnJHhoc9gTGIXfNb3Tbed-xR-j3DEyNzFfgQ8-7j3eNw-caS-YMqEebNbQ9n_hHc41qeu1NcqwAYcdHvbiw&usqp=CAE",
+            "description": "Os pneus grossos facilitam o trabalho em quase todos os terrenos e um potente motor de 750 W leva você aonde quer que vá com facilidade..",
             "button": "Comprar"
         },
         {
             "id": 3,
-            "name": "H100",
-            "image": "https://inow2.inoovamkt.com.br/wp-content/uploads/2024/02/H100-Amarela-com-somba-sem-fundo-600x598.webp",
-            "description": "Muito mais do que apenas andar de bicicleta, a Inow traz um novo estilo de vida para seus usuários",
-            "button": "Comprar"
-        },
-        {
-            "id": 4,
-            "name": "BK-V9",
-            "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTO6gxvVcHbwO4Lom_ufSMqdl7YkLQoQZuGOGZOnJHhoc9gTGIXfNb3Tbed-xR-j3DEyNzFfgQ8-7j3eNw-caS-YMqEebNbQ9n_hHc41qeu1NcqwAYcdHvbiw&usqp=CAE",
-            "description": "750 W de potência para ajudá-lo em colinas e terrenos. As e-bikes Fatfish são restritas a 25 km/h para atender aos regulamentos de limite de velocidade público, mas podem ser desbloqueadas a 50 km/h para uso apenas em propriedades privadas.",
-            "button": "Comprar"
-        },
-        {
-            "id": 5,
-            "name": "CUSTOM V8",
-            "image": "https://http2.mlstatic.com/D_NQ_NP_638065-MLB73472847405_122023-O.webp",
-            "description": "As bicicletas Fatfish são testadas para capacidade de parada em qualquer clima. Os freios a disco hidráulicos proporcionam melhor poder de parada para uma condução mais segura.",
-            "button": "Comprar"
-        },
-        {
-            "id": 6,
             "name": "BK-500",
-            "image": "https://inow2.inoovamkt.com.br/wp-content/uploads/2024/02/BK500-Sem-fundo-com-sombra-1024x646.png",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_962707-MLB74304804439_012024-O.webp",
             "description": "Seja na cidade ou no campo, a BK-500 tem a potencia e a velocidade que te levam a qualquer lugar.",
             "button": "Comprar"
-        },
-        {
-            "id": 7,
-            "name": "Visor colorido",
-            "image": "https://www.fatfishbikes.com.au/cdn/shop/files/DSC09548_copy.jpg?height=823&v=1704670236&width=823",
-            "description": "LCD retroiluminado com indicador de carga, velocímetro, hodômetro, hodômetro parcial, nível de assistência ao pedal, relógio e muito mais"
         }
     ]
 }

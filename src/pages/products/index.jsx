@@ -9,9 +9,6 @@ export const Product = () => {
 
     return (
         <div>
-            {/* <h2>{name}</h2>
-            <p>{description}</p> */}
-
             <WhatsAppButton itemName={slug}/>
         </div>
     );

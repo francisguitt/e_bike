@@ -6,9 +6,10 @@ height: 100vh;
 background-color: #ddd;
 `;
 
-export const WhatsAppButtonParagraph = styled.p`
+export const WhatsAppButtonParagraph = styled.h3`
 text-align: center;
-color: #000000;
+color: #636363;
+text-transform: capitalize;
 `;
 
 export const WhatsAppButtonArea = styled.div`
@@ -31,19 +32,19 @@ export const WhatsAppButtonTitle = styled.div`
  display: flex;
  justify-content: center;
  align-items: center;
- max-width: 800px;
+ max-width: 700px;
     width: 100%;
     margin: auto;
  @media (max-width:768px) {
     display: flex;
     max-width: 800px;
-    width: 100%;
+    width: 90%;
     margin: auto;
  }
 `;
 
 export const WhatsAppButtonTitleText = styled.h2`
-color: #0f0606;
+color: #0f0606b2;
 font-size: 30px;
 text-align: center;
 @media (max-width:768px) {

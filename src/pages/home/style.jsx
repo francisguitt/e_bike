@@ -1,6 +1,8 @@
 
 
 import styled from "styled-components";
+
+
 export const HomeHedaer = styled.div`
 margin-top:4rem;
 /* padding:10px; */
@@ -171,6 +173,78 @@ export const HomePreviewArea = styled.div`
 }
 `;
 
+
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+export const HomePreview_2 = styled.div`
+/* display: flex; */
+/* background-color: red; */
+
+gap: 1rem;
+max-width: 1280px;
+width: 100%;
+margin: auto;
+ @media (max-width:768px) {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0;
+} 
+`;
+
+
+export const HomePreviewArea_2 = styled.div`
+display: flex;
+justify-content: center;
+margin: 25px 0;
+/* background-color: green; */
+max-width: 900px;
+width: 100%;
+margin: 4rem auto;
+padding: 10px;
+@media(max-width:768px){
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    padding: 0;
+}
+`;
+
+export const HomePictureBox_2 = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* background-color: yellow; */
+width: 100%;
+/* gap: 2rem; */
+/* flex-direction: column; */
+@media (max-width:768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%; 
+    padding: 10px;
+    max-width: 400px;
+    margin: 10px;   
+}
+`;
+
+export const HomeTitleArea_2 = styled.div`
+
+
+background-color: #261d801c;
+padding: 6px;
+max-width: 240px;
+width: 100%;
+@media (max-width:768px){
+    max-width:395px;
+    width: 110%;
+}
+`;
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++
 export const HomePictureBox = styled.div`
 @media (max-width:768px){
     display: flex;
@@ -186,9 +260,9 @@ export const HomePictureBox = styled.div`
 `;
 
 export const HomePreviewImg = styled.img`
-max-width: 250px;
-border-top-left-radius:10px;
-border-top-right-radius:10px;
+    max-width: 250px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
     @media (max-width:768px){
      width: 110%;
     max-width: 450px; 
