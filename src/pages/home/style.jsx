@@ -234,7 +234,7 @@ width: 100%;
 export const HomeTitleArea_2 = styled.div`
 
 
-background-color: #261d801c;
+/*background-color: #261d801c;*/
 padding: 6px;
 max-width: 240px;
 width: 100%;
