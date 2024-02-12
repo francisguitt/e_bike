@@ -14,8 +14,8 @@ export const MainInfo = () => {
 
     return (
         <C.MainInfoContainer>
-            <C.Headline>Liberte-se do Trânsito! Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.</C.Headline>
-            <C.Subheadline>Descubra a Liberdade da Mobilidade Sustentável - Mais Rápido, Mais Longe, Sem Esforço.</C.Subheadline>
+            {/* <C.Headline>Liberte-se do Trânsito! Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.</C.Headline> */}
+            {/* <C.Subheadline>Descubra a Liberdade da Mobilidade Sustentável - Mais Rápido, Mais Longe, Sem Esforço.</C.Subheadline> */}
             <ButtonDark handleClick={handleClick} name="Garanta Já A Sua !" />
             <C.List>
                 <C.ListItem><C.Icon>🚀</C.Icon>Acelere Seu Dia: Fuja do trânsito e chegue mais rápido ao seu destino.</C.ListItem>

@@ -59,7 +59,7 @@ export const Home = () => {
                 </C.HomeHeaderPicture>
                 <C.HomeHeaderTitle>
                     <C.HomeHeadeTitleText>
-                        A melhor E-bike com pneus grossos. Pois não importa como você ande
+                        Liberte-se do Trânsito! Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.
                     </C.HomeHeadeTitleText>
                 </C.HomeHeaderTitle>
             </C.HomeHedaer>
@@ -103,7 +103,11 @@ export const Home = () => {
                     </C.HomeSliderImage>
                 </C.HomeSlider>
             )}
-
+            <C.HeadLine>
+                <C.SubHeadline>
+                    Descubra a Liberdade da Mobilidade Sustentável - Mais Rápido, Mais Longe, Sem Esforço.
+                </C.SubHeadline>
+            </C.HeadLine>
             <C.HomePreview>
                 {staticDataImages.items2.map((item) => (
                     <C.HomePreviewControler key={item.id}>

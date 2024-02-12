@@ -30,10 +30,12 @@ display: flex;
 export const HomeHeaderTitle = styled.div`
 max-width: 1280px;
 width: 50%;
-margin: auto;
+margin:5px  auto;
+border-radius: 4px;
 @media(max-width:768px){
-width: 100%;
-padding: 2px;
+width: 95%;
+padding: 10px;
+background-color: rgb(63, 62, 62);
 }
 `;
 
@@ -41,13 +43,15 @@ padding: 2px;
 export const HomeHeadeTitleText = styled.h2`
 text-align: center;
 font-weight:bold;
-font-size: 35px;
-color:#cfcacad3;
-/* background-color: #ffffff11; */
+font-size: 39.99px;
+color:#cfcacaeb;
+
 @media(max-width:768px){
-font-size:30.99px;
-color:#fafafab0;
+font-size: 20px;
+color:#ffffffe4;
+max-width: 400px;
 width: 100%;
+text-align: center;
 }
 `;
 
@@ -83,6 +87,40 @@ export const HomeHedaerPictureImg = styled.img`
 }
 `;
 
+// HeadLine____________________________________
+export const HeadLine = styled.section`
+padding: 20px;
+max-width:1280px;
+width: 50%;
+margin: 2.5rem auto;
+border-radius: 20px;
+/* background-color: rgb(240, 240, 240); */
+background-color: rgba(158, 156, 156, 0.315);
+    @media(max-width:768px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgb(26, 25, 25); */
+    background-color: rgb(63, 62, 62);
+    border-radius: 10px;
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+
+    }
+`;
+
+export const SubHeadline = styled.h2`
+     font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+`;
+
+// HeadLine____________________________________
 
 export const HomeSlider = styled.div`
 width: 100%;
