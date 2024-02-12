@@ -24,7 +24,6 @@ export const VerticalMenuArea = styled.div`
   right: 0;
   width: 100%;
   height: 140px;
-  /* background-color: #030303; */
   animation: ${fadeInOut} 0.3s ease-in-out;
   }
 `;
@@ -37,7 +36,7 @@ export const MenuVerticalNavLink = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fffffcf9;
+  background-color: #686867f8;
   max-width: 1280px;
   width: 100%;
   margin: auto;
@@ -60,6 +59,6 @@ export const VerticalMenuLink = styled(Link)`
     padding: 2px;
     text-decoration: none;
     font-weight: bold;
-    color: ${({ selected }) => (selected ? '#296335eb' : '#898d89')};
+    color: ${({ selected }) => (selected ? '#fafafa' : '#ffffffb3')};
 
 `;

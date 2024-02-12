@@ -25,13 +25,13 @@ export const Footer = () => {
                             E-bike global &copy; 2024 all rights reserved
                         </C.FooterRightReservedText>
                     </C.FooterRightReserved>
-                  {/*  <C.FooterAuthor>
+                   {/* <C.FooterAuthor>
                       <C.FooterAuthorText
                             href={linkAuthor}>
                             Desenvolvido com
                             <C.IconHeart>  &#10084;  </C.IconHeart>
                             por guittzoom</C.FooterAuthorText>
-                    </C.FooterAuthor>*/}
+                    </C.FooterAuthor> */}
                 </C.FooterContent>
             </C.FooterContainer>
         </>
