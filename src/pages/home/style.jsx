@@ -94,18 +94,17 @@ max-width:1280px;
 width: 50%;
 margin: 2.5rem auto;
 border-radius: 20px;
-/* background-color: rgb(240, 240, 240); */
 background-color: rgba(158, 156, 156, 0.315);
+
     @media(max-width:768px){
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    /* background-color: rgb(26, 25, 25); */
     background-color: rgb(63, 62, 62);
     border-radius: 10px;
     max-width: 1280px;
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
 
     }
