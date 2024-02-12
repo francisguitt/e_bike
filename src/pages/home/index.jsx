@@ -45,7 +45,7 @@ export const Home = () => {
     const phoneNumber = phoneNumbers.num;
     const handleWhatsAppClick = () => {
         // const whatsappMessage = `Olá! Estou Interesado na  Bike ${itemName}`;
-        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent('Olá vim pelo site , e quero masi infomações sobre as bikes')}`;
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent('Olá vim pelo site , e quero mais infomações sobre as bikes')}`;
 
         window.open(whatsappLink, '_blank');
     };
