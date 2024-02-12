@@ -231,20 +231,10 @@ width: 100%;
 }
 `;
 
-export const HomeTitleArea_2 = styled.div`
-
-
-/*background-color: #261d801c;*/
-padding: 6px;
-max-width: 240px;
-width: 100%;
-@media (max-width:768px){
-    max-width:395px;
-    width: 110%;
-}
-`;
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 export const HomePictureBox = styled.div`
 @media (max-width:768px){
     display: flex;
