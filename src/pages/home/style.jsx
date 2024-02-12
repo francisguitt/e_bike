@@ -129,7 +129,7 @@ text-align: center;
     list-style-type: none;
     padding: 0;
     margin-bottom: 20px;
-    background-color: #ffffff55;
+    background-color: #ffffff1c;
     border-radius: 5px;
     padding: 10px;
     max-width: 1280px;
