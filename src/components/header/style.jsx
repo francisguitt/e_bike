@@ -28,7 +28,7 @@ padding: 0;
 
 
 export const HeaderTopTitle = styled.h1`
-   color: #fff;
+   color: #ffff00a9;
    margin: 10px 25px;
    text-transform: uppercase;
 

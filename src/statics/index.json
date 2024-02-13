@@ -4,25 +4,22 @@
             "id": 1,
             "name": "H100",
             "image": "https://http2.mlstatic.com/D_NQ_NP_793242-MLB73456986066_122023-O.webp",
-            "description": "Tenha com você a todo tempo uma bike portatil, agíl,eficiente, e que percorre longas distancias",
-            "button": "Garanta Já A Sua !",
-            "text": "🚗 E se a bateria acabar durante o trajeto?  Relaxa! A autonomia excepcional garante que você chegue sempre ao seu destino."
+            "description": "É perfeita para quem deseja usar uma bicicleta em qualquer lugar. Ela por ser facilmente transportada no porta malas do seu carro pois é dobrável. Com autonomia de 60 km e bateria de longa duração.",
+            "button": "Garanta Já A Sua ! "
         },
         {
             "id": 2,
             "name": "BK-V9",
             "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTO6gxvVcHbwO4Lom_ufSMqdl7YkLQoQZuGOGZOnJHhoc9gTGIXfNb3Tbed-xR-j3DEyNzFfgQ8-7j3eNw-caS-YMqEebNbQ9n_hHc41qeu1NcqwAYcdHvbiw&usqp=CAE",
-            "description": "Os pneus grossos facilitam o trabalho em quase todos os terrenos e um potente motor de 750 W leva você aonde quer que vá com facilidade..",
-            "button": "Garanta Já A Sua !",
-            "text": "⏱️ Não tenho tempo para manutenção constante. Nossa bicicleta é projetada para exigir o mínimo de esforço de manutenção."
+            "description": "Ela pode te levar a qualquer lugar, sem limites. Com seus pneus de 26 polegadas nenhum terreno é um obstáculo. Perfeito para aventureiros de plantão. Mobilidade para qualquer lugar em alta velocidade.",
+            "button": "Garanta Já A Sua !"
         },
         {
             "id": 3,
             "name": "BK-500",
             "image": "https://http2.mlstatic.com/D_NQ_NP_962707-MLB74304804439_012024-O.webp",
             "description": "Seja na cidade ou no campo, a BK-500 tem a potencia e a velocidade que te levam a qualquer lugar.",
-            "button": "Garanta Já A Sua !",
-            "text": " 🌦️ E se chover?  Com resistência às condições climáticas, nossa bicicleta é sua aliada em qualquer tempo."
+            "button": "Garanta Já A Sua !"
         }
     ]
 }

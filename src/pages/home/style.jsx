@@ -127,17 +127,32 @@ text-align: center;
 `;
 
 export const ListItem = styled.li`
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: yellow;
     text-align: center;
     padding: 10px;
     width: 90%;
     border-radius: 5px;
     @media (max-width:768px) {
         font-size: 18px;
+        font-size: 25px;
     }
 `;
+
+export const ListItemText = styled.p`
+font-size:16.99;
+color: #fff;
+border-radius: 5px;
+background-color: #6a6a6a36;
+padding: 10px;
+margin-top: 1rem;
+@media (max-width:768px) {
+        font-size: 17px;
+   
+    }
+`; 
+
 
 export const Icon = styled.span`
     margin-right: 10px;
@@ -338,12 +353,12 @@ width: 100%;
 `;
 
 export const HomeTitle = styled.h2`
-color: #dad7d7;
+color: #ffff00c7;
 margin-left: 1rem;
 `;
 
 
 export const HomeDescription = styled.p`
-color: #ddddddc3;
+color: #dddddd;
 margin-left: 1rem;
 `;

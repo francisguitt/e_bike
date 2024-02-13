@@ -14,7 +14,7 @@ export const Button = styled.button`
  display: flex;
 justify-content: center;
 align-items: center;
-  background-color:#1b7754;
+  background-color:#91ee34;
   width: 300px;
   border: 0;
   outline: none;
@@ -34,6 +34,6 @@ align-items: center;
 
 
 export const ButtonText = styled.h3`
- color: #fffffffc;
+ color: #636161;
  text-transform: capitalize;
 `;

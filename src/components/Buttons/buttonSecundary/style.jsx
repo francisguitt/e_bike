@@ -9,7 +9,7 @@ export const ButtonArea = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color:#0cff8176;
+  background-color:#91ee34;
   width: 300px;
   border: 0;
   outline: none;
@@ -24,6 +24,6 @@ export const Button = styled.button`
 
 
 export const ButtonText = styled.h3`
- color: #fafaface;
+ color: #636161;
  text-transform: capitalize;
 `;

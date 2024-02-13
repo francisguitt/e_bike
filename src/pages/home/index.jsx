@@ -44,7 +44,6 @@ export const Home = () => {
 
     const phoneNumber = phoneNumbers.num;
     const handleWhatsAppClick = () => {
-        // const whatsappMessage = `Olá! Estou Interesado na  Bike ${itemName}`;
         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent('Olá vim pelo site , e quero mais infomações sobre as bikes')}`;
 
         window.open(whatsappLink, '_blank');
@@ -63,11 +62,6 @@ export const Home = () => {
                     </C.HomeHeadeTitleText>
                 </C.HomeHeaderTitle>
             </C.HomeHedaer>
-            <C.List>
-                <C.ListItem><C.Icon>🚀</C.Icon>Acelere Seu Dia: Fuja do trânsito e chegue mais rápido ao seu destino.</C.ListItem>
-                <C.ListItem><C.Icon>🔋</C.Icon>Autonomia Incrível: Bateria de longa duração para quilômetros sem fim.</C.ListItem>
-                <ButtonDark handleClick={handleWhatsAppClick} name="Garanta Já A Sua !" />
-            </C.List>
             {isMobile ? (
                 <C.HomeSlider>
                     <C.HomeSliderImage>
@@ -122,9 +116,6 @@ export const Home = () => {
                                 <C.HomeTitleArea>
                                     <C.HomeTitle>{item.name}</C.HomeTitle>
                                     <C.HomeDescription>{item.description}</C.HomeDescription>
-                                    <C.List>
-                                        <C.ListItem>{item.text}</C.ListItem>
-                                    </C.List>
 
                                     <Link to={`/products/${item.name}`} style={{ textDecoration: "none" }}>{item.button && <ButtonSecundary name={item.button} />}</Link>
                                 </C.HomeTitleArea>
@@ -133,8 +124,6 @@ export const Home = () => {
                     </C.HomePreviewControler>
                 ))}
             </C.HomePreview>
-
-
             <C.HomePreview_2>
                 <C.HomePreviewArea_2>
                     <C.HomePictureBox_2>
@@ -162,17 +151,17 @@ export const Home = () => {
 
             <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Videos Demonstração</h2>
             <VideoDemo />
-            <C.List>
-                <C.ListItem><C.Icon>💪</C.Icon>Poupe Energia: Pedale com facilidade, sem esforço desnecessário.</C.ListItem>
-                <C.ListItem><C.Icon>🌿</C.Icon>Eco-Friendly: Faça parte da mudança para um planeta mais verde.</C.ListItem>
-            </C.List >
 
             <ButtonPrimary handleNavigation={handleNavigation} />
             <Store />
             <C.List>
-                <C.ListItem><C.Icon>🛠️</C.Icon>Manutenção Descomplicada: Design robusto e fácil de manter.</C.ListItem>
-                <C.ListItem><C.Icon>🌧️</C.Icon>Pronta para Desafios: Encare qualquer clima com nossa resistência superior.</C.ListItem>
-                <ButtonDark handleClick={handleWhatsAppClick} name="Garanta Já A Sua !" />
+                <C.ListItem><C.Icon></C.Icon>Sustentável<br /><C.ListItemText> Reduza sua pegada de carbono enquanto se desloca</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon></C.Icon>Autonomia<br /> <C.ListItemText>Mais quilômetros, menos recargas.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon></C.Icon>Manutenção<br /><C.ListItemText> Descomplicada Design robusto e fácil de manter.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon></C.Icon>Poupe Energia<br /> <C.ListItemText>Pedale com facilidade, sem esforço desnecessário.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon></C.Icon>Eco-Friendly<br /><C.ListItemText> Faça parte da mudança para um planeta mais verde.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon></C.Icon>Pronta para Desafios<br /><C.ListItemText>Encare qualquer clima com nossa resistência superior.</C.ListItemText></C.ListItem>
+                <ButtonDark handleClick={handleWhatsAppClick} name="Fale Conosco" />
             </C.List>
         </>
     )

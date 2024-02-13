@@ -39,7 +39,7 @@ export const Header = () => {
                             )}
                         </>
                     )}
-                    <C.HeaderTopTitle>e-bike-global</C.HeaderTopTitle>
+                    <C.HeaderTopTitle>e-bike global</C.HeaderTopTitle>
                 </C.HeaderTopArea>
             </C.HeaderTop>
             {isDesktop || isOpen ? <VerticalMenu /> : null}
