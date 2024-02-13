@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
 max-width: 1280px;
 width: 100%;
 margin: auto;
-background-color: #3d3c3c;
+background-color: #ffffffee;
 padding: 10;
 `;
 
@@ -54,7 +54,7 @@ padding: 0;
 
 export const FooterRightReservedText = styled.p`
 font-size: 20px;
-color: #e4e4e493;
+color: #313131b8;
 @media (max-width:768px) {
  font-size:13px;
 }

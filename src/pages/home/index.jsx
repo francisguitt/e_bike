@@ -58,7 +58,7 @@ export const Home = () => {
                 </C.HomeHeaderPicture>
                 <C.HomeHeaderTitle>
                     <C.HomeHeadeTitleText>
-                        Liberte-se do Trânsito! Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.
+                        <span style={{color:"#ffff00d1"}}>Liberte-se do Trânsito!</span> Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.
                     </C.HomeHeadeTitleText>
                 </C.HomeHeaderTitle>
             </C.HomeHedaer>
@@ -103,7 +103,7 @@ export const Home = () => {
             )}
             <C.HeadLine>
                 <C.HomeHeadeTitleText>
-                    Descubra a Liberdade da Mobilidade Sustentável - Mais Rápido, Mais Longe, Sem Esforço.
+                    Descubra a Liberdade da Mobilidade Sustentável- <span style={{color:"#ffff00d1"}}>Mais Rápido, Mais Longe, Sem Esforço.</span>
                 </C.HomeHeadeTitleText>
             </C.HeadLine>
 
