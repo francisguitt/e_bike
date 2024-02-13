@@ -155,12 +155,12 @@ export const Home = () => {
             <ButtonPrimary handleNavigation={handleNavigation} />
             <Store />
             <C.List>
-                <C.ListItem><C.Icon></C.Icon>Sustentável<br /><C.ListItemText> Reduza sua pegada de carbono enquanto se desloca</C.ListItemText></C.ListItem>
-                <C.ListItem><C.Icon></C.Icon>Autonomia<br /> <C.ListItemText>Mais quilômetros, menos recargas.</C.ListItemText></C.ListItem>
-                <C.ListItem><C.Icon></C.Icon>Manutenção<br /><C.ListItemText> Descomplicada Design robusto e fácil de manter.</C.ListItemText></C.ListItem>
-                <C.ListItem><C.Icon></C.Icon>Poupe Energia<br /> <C.ListItemText>Pedale com facilidade, sem esforço desnecessário.</C.ListItemText></C.ListItem>
-                <C.ListItem><C.Icon></C.Icon>Eco-Friendly<br /><C.ListItemText> Faça parte da mudança para um planeta mais verde.</C.ListItemText></C.ListItem>
-                <C.ListItem><C.Icon></C.Icon>Pronta para Desafios<br /><C.ListItemText>Encare qualquer clima com nossa resistência superior.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon>🍃</C.Icon>Sustentável<br /><C.ListItemText> Reduza sua pegada de carbono enquanto se desloca</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon>🔋</C.Icon>Autonomia<br /> <C.ListItemText>Mais quilômetros, menos recargas.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon>⚙️</C.Icon>Manutenção<br /><C.ListItemText> Descomplicada Design robusto e fácil de manter.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon>🔌</C.Icon>Poupe Energia<br /> <C.ListItemText>Pedale com facilidade, sem esforço desnecessário.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon>☘️</C.Icon>Eco-Friendly<br /><C.ListItemText>Faça parte da mudança para um planeta mais verde.</C.ListItemText></C.ListItem>
+                <C.ListItem><C.Icon>🛤️</C.Icon>Pronta para Desafios<br /><C.ListItemText>Encare qualquer clima com nossa resistência superior.</C.ListItemText></C.ListItem>
                 <ButtonDark handleClick={handleWhatsAppClick} name="Fale Conosco" />
             </C.List>
         </>

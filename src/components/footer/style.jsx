@@ -17,7 +17,6 @@ max-width: 1280px;
 width: 90%;
 margin: auto;
  padding: 8px;
-
 `;
 
 export const FooterContentInfos = styled.div`
