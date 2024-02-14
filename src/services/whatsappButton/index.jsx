@@ -28,7 +28,7 @@ export const WhatsAppButton = ({ itemName }) => {
 
 
                 <C.WhatsappButtonContent>
-                    <C.WhatsAppButtonParagraph>prosseguir ?</C.WhatsAppButtonParagraph>
+                    <C.WhatsAppButtonParagraph>deseja prosseguir ?</C.WhatsAppButtonParagraph>
                     <C.WhatsAppButtonArea>
                     <ButtonSucess handleWhatsAppClick={handleWhatsAppClick} itemName={itemName} text="Sim" />
                     <ButtonWarning handleBack={handleBack} text="Não" />

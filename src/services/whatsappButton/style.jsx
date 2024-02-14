@@ -8,7 +8,7 @@ background-color: #ddd;
 
 export const WhatsAppButtonParagraph = styled.h3`
 text-align: center;
-color: #636363;
+color: #000000bd;
 text-transform: capitalize;
 `;
 
@@ -44,7 +44,7 @@ export const WhatsAppButtonTitle = styled.div`
 `;
 
 export const WhatsAppButtonTitleText = styled.h2`
-color: #0f0606b2;
+color: #00000088;
 font-size: 30px;
 text-align: center;
 @media (max-width:768px) {
