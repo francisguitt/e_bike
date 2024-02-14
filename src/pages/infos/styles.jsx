@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const HomeInfos = styled.article`
 height: 100vh;
-/* background-color: red; */
 margin-top: 1rem;
 `;
 
@@ -62,7 +61,7 @@ export const HomeDetails = styled.details`
   text-align: center;
   /* margin-top:2rem; */
   width: 100%;
-  background-color: #474747;
+  background:#8382825b;
 `;
 
 
