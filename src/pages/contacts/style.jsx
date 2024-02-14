@@ -80,6 +80,7 @@ font-size: 20px;
  align-items: center;
  text-align: center;
  padding: 5px;
+ color: #2c840c;
 `;
 
 
