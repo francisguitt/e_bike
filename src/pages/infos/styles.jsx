@@ -37,7 +37,7 @@ margin: auto;
 
 export const HomeInfosTitleText = styled.h2`
 text-transform: capitalize;
-color: #ddddddc3;
+color: #dfe52f;
 `
 
 export const HomeDetailsArea = styled.div`
