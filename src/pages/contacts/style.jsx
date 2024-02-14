@@ -75,7 +75,7 @@ font-size: 15px;
 `;
 
 export const ContactsContainerParagraph = styled.p`
-font-size: 20px;
+font-size: 17px;
  display: flex;
  align-items: center;
  text-align: center;
