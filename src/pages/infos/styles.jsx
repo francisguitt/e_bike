@@ -45,13 +45,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-/* gap: 1rem; */
-/* max-width: 1280px; */
+
 width: 100%;
 margin: auto;
 z-index: 999;
 @media (max-width:768px) {
    width: 100%;
+   margin-top:2rem;
 }
 `;
 
@@ -60,7 +60,7 @@ export const HomeDetails = styled.details`
    justify-content: center;
    align-items:center;
   text-align: center;
-  margin-top:1rem;
+  /* margin-top:2rem; */
   width: 100%;
   background-color: #474747;
 `;
@@ -69,7 +69,7 @@ export const HomeDetails = styled.details`
 export const HomeDetailsSumary = styled.summary`
 color: #76a507;
 background-color: #07070783;
-font-size: 18.99px;
+font-size: 25.99px;
 `;
 
 
