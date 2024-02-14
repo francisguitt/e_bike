@@ -103,7 +103,7 @@ export const Home = () => {
             )}
             <C.HeadLine>
                 <C.HomeHeadeTitleText>
-                    Descubra a Liberdade da Mobilidade Sustentável- <span style={{ color: "#ffff00d1" }}>Mais Rápido, Mais Longe, Sem Esforço.</span>
+                    Descubra a Liberdade da Mobilidade Sustentável. <span style={{ color: "#ffff00d1" }}>Mais Rápido, Mais Longe, Sem Esforço.</span>
                 </C.HomeHeadeTitleText>
             </C.HeadLine>
 
