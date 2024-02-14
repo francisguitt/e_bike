@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import { Arrow } from '../../icons';
+
+
+
 export const AboutArea = styled.div`
 background-color:#f0ecec;
 max-width: 1280px;
@@ -38,7 +41,7 @@ font-size: 45px;
 `;
 
 export const AboutAreaText = styled.h2`
-color: #ffffffe0;
+color: #f4f14cdf;
 text-align: center;
 font-size: 35px;
 margin:20px 10px;
@@ -53,13 +56,16 @@ margin: 5px;
 
 export const AboutAreaContent = styled.div`
 max-width: 900px;
-width: 100%;
-margin: auto;
+width: 90%;
+margin:6rem auto;
+padding: 15px;
+background-color: #b3b3b320;
+border-radius: 5px;
 `;
 
 
 export const AboutAreaParagraph = styled.p`
- color: #080808;
+ color: #050503c5;
  font-size: 25px;
  @media(max-width:768px) {
     font-size: 18.99px;
