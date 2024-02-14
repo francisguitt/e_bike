@@ -58,7 +58,7 @@ export const Home = () => {
                 </C.HomeHeaderPicture>
                 <C.HomeHeaderTitle>
                     <C.HomeHeadeTitleText>
-                        <span style={{color:"#ffff00d1"}}>Liberte-se do Trânsito!</span> Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.
+                        <span style={{ color: "#ffff00d1" }}>Liberte-se do Trânsito!</span> Transforme suas Jornadas com Nossa Bicicleta Elétrica de Alta Performance.
                     </C.HomeHeadeTitleText>
                 </C.HomeHeaderTitle>
             </C.HomeHedaer>
@@ -103,7 +103,7 @@ export const Home = () => {
             )}
             <C.HeadLine>
                 <C.HomeHeadeTitleText>
-                    Descubra a Liberdade da Mobilidade Sustentável- <span style={{color:"#ffff00d1"}}>Mais Rápido, Mais Longe, Sem Esforço.</span>
+                    Descubra a Liberdade da Mobilidade Sustentável- <span style={{ color: "#ffff00d1" }}>Mais Rápido, Mais Longe, Sem Esforço.</span>
                 </C.HomeHeadeTitleText>
             </C.HeadLine>
 
@@ -111,7 +111,7 @@ export const Home = () => {
                 {staticDataImages.items2.map((item) => (
                     <C.HomePreviewControler key={item.id}>
                         <C.HomePreviewArea>
-                            <C.HomePictureBox>' '
+                            <C.HomePictureBox>
                                 <C.HomePreviewImg src={item.image} alt='imagem' />
                                 <C.HomeTitleArea>
                                     <C.HomeTitle>{item.name}</C.HomeTitle>
@@ -125,6 +125,7 @@ export const Home = () => {
                 ))}
             </C.HomePreview>
             <C.HomePreview_2>
+                
                 <C.HomePreviewArea_2>
                     <C.HomePictureBox_2>
                         <C.HomePreviewImg src={bike_bk500} alt='imagens' />
@@ -132,7 +133,6 @@ export const Home = () => {
                             <Link onClick={handleWhatsAppClick} style={{ textDecoration: "none" }}><ButtonSecundary name="Comprar" /></Link>
                         </C.HomeTitleArea>
                     </C.HomePictureBox_2>
-
                     <C.HomePictureBox_2>
                         <C.HomePreviewImg src={bike_v9} alt='imagens' />
                         <C.HomeTitleArea>
@@ -148,7 +148,6 @@ export const Home = () => {
                     </C.HomePictureBox_2>
                 </C.HomePreviewArea_2>
             </C.HomePreview_2 >
-
             <h2 style={{ textAlign: "center", color: "#ddd", marginBottom: "2rem" }}>Videos Demonstração</h2>
             <VideoDemo />
 

@@ -34,6 +34,6 @@ align-items: center;
 
 
 export const ButtonText = styled.h3`
- color: #636161;
+ color: #0f0e0ee3;
  text-transform: capitalize;
 `;

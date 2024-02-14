@@ -22,8 +22,7 @@ export const Button = styled.button`
 }
 `;
 
-
 export const ButtonText = styled.h3`
- color: #636161;
+ color: #101010;
  text-transform: capitalize;
 `;

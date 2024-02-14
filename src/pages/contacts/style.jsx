@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Phone, Arrow, Whatsapp, City } from '../../icons';
+import { Phone, Arrow, Whatsapp, City, Email } from '../../icons';
 
 
 export const ContactsArea = styled.div`
@@ -39,7 +39,7 @@ background-color: #252424cc;
 
 export const ContactsText = styled.h2`
 font-size: 25px;
-color:#dddddd;
+color:#eded4d;
 `;
 
 
@@ -59,26 +59,47 @@ margin: 35px 25px;
 
 `;
 
-export const ContactsContainerText = styled.p`
+export const ContactsContainerCard = styled.section`
+  background-color: #44444414;
+  border-radius: 5px;
+  max-width: 1280px;
+  width: 90%;
+  padding: 15px;
+  margin: 6.99rem 5rem;
+`;
+
+export const ContactsContainerTextArea = styled.div`
 display: flex;
 align-items: center;
+font-size: 15px;
 `;
 
-export const PhoneNumber = styled(Phone)`
-font-size: 30px;
-margin: 0 15px;
-color: #1675f0;
+export const ContactsContainerParagraph = styled.p`
+font-size: 20px;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ padding: 5px;
 `;
+
 
 export const WhatsapNumber = styled(Whatsapp)`
-font-size: 30px;
-margin: 0 15px;
+font-size: 35px;
+margin: 0 8px;
 color: #36a53f;
 `;
 
-export const CiteAdreass = styled(City)`
-font-size: 30px;
-margin: 0 15px;
+
+export const ContactEmail = styled(Email)`
+font-size: 35px;
+margin: 0 8px;
+color: #fe594ae5;
+`;
+
+
+export const Company = styled(City)`
+font-size: 35px;
+margin: 0 8px;
 color: #e66e5e;
 `
 

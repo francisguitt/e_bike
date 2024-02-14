@@ -59,6 +59,6 @@ export const VerticalMenuLink = styled(Link)`
     padding: 2px;
     text-decoration: none;
     font-weight: bold;
-    color: ${({ selected }) => (selected ? '#fafafa' : '#ffffffb3')};
+    color: ${({ selected }) => (selected ? '#baf360' : '#ebf436b3')};
 
 `;
