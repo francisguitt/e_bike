@@ -22,7 +22,7 @@ export const WhatsAppButton = ({ itemName }) => {
             <C.WhatsAppButtonContainer>
                 <C.WhatsAppButtonTitle>
                     <C.WhatsAppButtonTitleText>
-                        Você sera redirecionado para conversar com um de nossos atendentes.
+                        Você será redirecionado para conversar com um de nossos atendentes.
                     </C.WhatsAppButtonTitleText>
                 </C.WhatsAppButtonTitle>
 
