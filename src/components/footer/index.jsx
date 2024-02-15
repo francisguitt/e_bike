@@ -4,8 +4,8 @@ import { FloatingWhatsApp } from '../../components/whatsapFloating';
 import { Link } from 'react-router-dom';
 export const Footer = () => {
     const linkAuthor = "https://www.instagram.com/guittzoom";
-    const linkFacebook = "https://www.facebook.com/";
-    const linkInstagram = "https://www.instagram.com/";
+    const linkFacebook = "https://www.facebook.com/people/E-Bike-Global/61556566887902/?sk=photos";
+    const linkInstagram = "https://www.instagram.com/ebike_global_sp?igsh=emhmOTdqZmY1dXM2";
     const LinkTwiter = "https://www.twitter.com/";
     return (
 
