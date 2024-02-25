@@ -91,7 +91,7 @@ export const FormInput = () => {
             </C.Titlearea>
             <C.FormArea onSubmit={handleSubmit}>
                 <C.FormGroup>
-                    <label htmlFor="name">Nome:</label>
+                    <label htmlFor="name">Seu Nome:</label>
                     <input
                         type="text"
                         id="name"
@@ -101,7 +101,7 @@ export const FormInput = () => {
                     {nameError && <span>{nameError}</span>}
                 </C.FormGroup>
                 <C.FormGroup>
-                    <label htmlFor="email">Email:</label>
+                    <label htmlFor="email">Seu E-mail:</label>
                     <input
                         type="email"
                         id="email"
@@ -111,7 +111,7 @@ export const FormInput = () => {
                     {emailError && <span>{emailError}</span>}
                 </C.FormGroup>
                 <C.FormGroup>
-                    <label htmlFor="phone">Número de Celular:</label>
+                    <label htmlFor="phone">Seu Número:</label>
                     <input
                         type="text"
                         id="phone"
