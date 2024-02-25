@@ -73,24 +73,31 @@ padding: 10px;
 `;
 
 export const SubmitButton = styled.button`
-    padding: 13px 20px;
-    background-color: #007bff;
+   // padding: 13px 20px;
+    background-color: #ce4a1a;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
      margin: 1.5rem 0;
     width: 350px;
+    margin:1rem  5%;
+    font-size:25%;
     cursor: pointer;
     transition: background-color 0.3s;
 
     &:hover {
         cursor: pointer;
-        background-color: #0056b3;
+        background-color: #ce4a1a;
     }
 
     @media screen and (max-width: 768px) {
-        width: 100%;
-        padding: 18px;
+        width: 90%;
+        margin-left:20px;
+       // padding: 18px;
     }
+`;
+
+export const TextButtonForm = styled.h3`
+ font-size:16px;
 `;
 
