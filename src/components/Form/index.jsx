@@ -2,8 +2,6 @@
 
 import { useState } from 'react';
 import * as C from "./style";
-import { phoneNumbers } from "../../utils/numbers";
-import { FormContainer, FormGroup, SubmitButton } from './style';
 
 export const FormInput = () => {
 
@@ -14,27 +12,21 @@ export const FormInput = () => {
     const [emailError, setEmailError] = useState('');
     const [phoneError, setPhoneError] = useState('');
 
-
     const emailRegex = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
     const validateEmail = (email) => {
         const lowercaseEmail = email.toLowerCase();
-
         const isValidFormat = emailRegex.test(lowercaseEmail);
-
-        // Verifica se o provedor de e-mail é válido (ex: gmail.com)
         const validProviders = ["gmail.com", "yahoo.com", "outlook.com"];
         const emailParts = lowercaseEmail.split("@");
         const isValidProvider = validProviders.includes(emailParts[1]);
-
         return isValidFormat && isValidProvider;
     };
 
-    const phoneNumber = phoneNumbers.num;
     const validatePhone = (phone) => {
         const re = /^[0-9]{11}$/;
         return re.test(phone);
     }
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -44,7 +36,6 @@ export const FormInput = () => {
             return;
         } else {
             setNameError('');
-
         }
 
         if (email.trim() === '' || !validateEmail(email)) {
@@ -61,18 +52,42 @@ export const FormInput = () => {
             setPhoneError('');
             setName('');
             setEmail('');
-            setPhone('')
-            alert("Obrigado por se inscrever ")
+            setPhone('');
         }
-        const message = `Nome:  ${name}%0AEmail: ${email}%0ATelefone: ${phone}`;
-        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-        window.open(whatsappURL, '_blank');
+
+        // Construa o objeto FormData para enviar os dados do formulário
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('phone', phone);
+
+        // Faça a requisição POST para o serviço FormSubmit
+        fetch('https://formsubmit.co/guittdev22209@gmail.com', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                // Se a resposta for bem-sucedida, limpe os campos do formulário
+                setName('');
+                setEmail('');
+                setPhone('');
+                alert("Obrigado por se inscrever ");
+            } else {
+                // Se houver um erro na resposta, exiba uma mensagem de erro
+                alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao enviar formulário:', error);
+            alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+        });
     }
 
     return (
         <C.FormContainer>
             <C.Titlearea>
-                <C.TitleAreaText>Cadastre-se para receber nossa newslatter </C.TitleAreaText>
+                <C.TitleAreaText>Cadastre-se para receber nossa newsletter</C.TitleAreaText>
             </C.Titlearea>
             <C.FormArea onSubmit={handleSubmit}>
                 <C.FormGroup>
@@ -95,20 +110,18 @@ export const FormInput = () => {
                     />
                     {emailError && <span>{emailError}</span>}
                 </C.FormGroup>
-                <FormGroup>
+                <C.FormGroup>
                     <label htmlFor="phone">Número de Celular:</label>
                     <input
-                        type="number"
+                        type="text"
                         id="phone"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                     />
                     {phoneError && <span>{phoneError}</span>}
-                    <SubmitButton type="submit">Enviar</SubmitButton>
-                </FormGroup>
+                </C.FormGroup>
+                <C.SubmitButton type="submit">Enviar</C.SubmitButton>
             </C.FormArea>
         </C.FormContainer>
     );
 }
-
-
