@@ -23,7 +23,7 @@ export const FormInput = () => {
         const isValidProvider = validProviders.includes(emailParts[1]);
         return isValidFormat && isValidProvider;
     };
-
+ 
     const validatePhone = (phone) => {
         const re = /^[0-9]{11}$/;
         return re.test(phone);
@@ -123,7 +123,7 @@ export const FormInput = () => {
                     />
                     {phoneError && <span>{phoneError}</span>}
                 </C.FormGroup>
-                <C.SubmitButton type="submit"><C.TextButtonForm>Quero meu cupon  de 10%</C.TextButtonForm></C.SubmitButton>
+                <C.SubmitButton type="submit"><C.TextButtonForm>Quero meu cupom  de 10%</C.TextButtonForm></C.SubmitButton>
             </C.FormArea>
         </C.FormContainer>
     );
