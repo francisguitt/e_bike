@@ -245,7 +245,6 @@ export const HomePreviewControler = styled.div`
 
 
 export const HomePreviewArea = styled.div`
-
 @media(max-width:768px){
     max-width: 450px;
     padding: 0;
@@ -293,7 +292,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-/* background-color: yellow; */
 width: 100%;
 /* gap: 2rem; */
 /* flex-direction: column; */

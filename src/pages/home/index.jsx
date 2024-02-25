@@ -14,7 +14,7 @@ import { ButtonSecundary } from '../../components/Buttons/buttonSecundary';
 import { ButtonPrimary } from '../../components/Buttons/buttonPrimary';
 import { ButtonDark } from '../../components/Buttons/buttonDark';
 import { Store } from '../store';
-
+import { FormInput } from '../../components/Form';
 import picture from '../../assets/ebikebunner.webp';
 import bike_v9 from '../../assets/v9.png';
 import bike_h100 from '../../assets/h100.png';
@@ -162,6 +162,8 @@ export const Home = () => {
                 <C.ListItem><C.Icon>🛤️</C.Icon>Pronta para Desafios<br /><C.ListItemText>Encare qualquer clima com nossa resistência superior.</C.ListItemText></C.ListItem>
                 <ButtonDark handleClick={handleWhatsAppClick} name="Fale Conosco" />
             </C.List>
+
+            <FormInput/>
         </>
     )
 }
