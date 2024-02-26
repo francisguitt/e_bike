@@ -8,12 +8,13 @@ import { Product } from "./pages/products";
 import { About } from "./pages/about";
 import { Footer } from "./components/footer";
 import { Contacts } from "./pages/contacts";
+import { PixelInitializer } from "./components/Pixel"
 
 export const MainRoutes = () => {
     return (
         <>
-
             <Routes>
+                <PixelInitializer />
                 <Route path="/" element={<Home />} />
                 <Route path="/infos" element={<Infos />} />
                 <Route path="/about" element={<About />} />
