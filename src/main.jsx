@@ -7,6 +7,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <MainRoutes />
     </BrowserRouter>
-
   </React.StrictMode>,
 )
