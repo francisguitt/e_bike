@@ -14,7 +14,8 @@ export const MainRoutes = () => {
     return (
         <>
             <Routes>
-                <PixelInitializer />
+                {/* <PixelInitializer /> */}
+                <Route element={<PixelInitializer />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/infos" element={<Infos />} />
                 <Route path="/about" element={<About />} />
