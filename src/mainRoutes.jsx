@@ -13,9 +13,8 @@ import { PixelInitializer } from "./components/Pixel"
 export const MainRoutes = () => {
     return (
         <>
+        <PixelInitializer />
             <Routes>
-                {/* <PixelInitializer /> */}
-                <Route element={<PixelInitializer />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/infos" element={<Infos />} />
                 <Route path="/about" element={<About />} />
