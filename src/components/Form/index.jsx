@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import * as C from "./style";
 import { Email } from "../../utils/emails";
-
+import { apiUrl } from '../../utils/api'
 export const FormInput = () => {
 
     const [name, setName] = useState('');
@@ -18,12 +18,25 @@ export const FormInput = () => {
     const validateEmail = (email) => {
         const lowercaseEmail = email.toLowerCase();
         const isValidFormat = emailRegex.test(lowercaseEmail);
-        const validProviders = ["gmail.com", "yahoo.com", "outlook.com"];
+        const validProviders = [
+            "gmail.com",
+            "gmail.com.br",
+            "yahoo.com",
+            "outlook.com",
+            "uol.com",
+            "uol.com.br",
+            "hotmail.com",
+            "hotmail.com.br",
+            "icloud.com",
+            "me.com",
+            "mac.com",
+            "aol.com",
+            "aol.com.br",];
         const emailParts = lowercaseEmail.split("@");
         const isValidProvider = validProviders.includes(emailParts[1]);
         return isValidFormat && isValidProvider;
     };
- 
+
     const validatePhone = (phone) => {
         const re = /^[0-9]{11}$/;
         return re.test(phone);
@@ -55,27 +68,36 @@ export const FormInput = () => {
             setEmail('');
             setPhone('');
         }
-        // Construa o objeto FormData para enviar os dados do formulário
+
         const personalEmail = Email.personal_email;
         const formData = new FormData();
         formData.append('name', name);
         formData.append('email', email);
         formData.append('phone', phone);
 
-        // Faça a requisição POST para o serviço FormSubmit
+
+        // apiUrl.post(`${apiUrl}/${personalEmail}`, {
+        //     // method: 'POST',
+        //     body: formData
+
+        // })
         fetch(`https://formsubmit.co/${personalEmail}`, {
-            method: 'POST',
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
             body: formData
         })
             .then(response => {
                 if (response.ok) {
-                    // Se a resposta for bem-sucedida, limpe os campos do formulário
                     setName('');
                     setEmail('');
                     setPhone('');
+                    console.log(formData)
                     alert("Seu e-mail foi enviado com sucesso!");
                 } else {
-                    // Se houver um erro na resposta, exiba uma mensagem de erro
+
                     alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
                 }
             })
