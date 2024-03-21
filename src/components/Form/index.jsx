@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import * as C from "./style";
 import { Email } from "../../utils/emails";
-import { apiUrl } from '../../utils/api'
+//import {apiUrl } from '../../utils/api';
 export const FormInput = () => {
 
     const [name, setName] = useState('');
@@ -14,7 +14,6 @@ export const FormInput = () => {
     const [phoneError, setPhoneError] = useState('');
 
     const emailRegex = /^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-
     const validateEmail = (email) => {
         const lowercaseEmail = email.toLowerCase();
         const isValidFormat = emailRegex.test(lowercaseEmail);
@@ -69,24 +68,16 @@ export const FormInput = () => {
             setPhone('');
         }
 
-        const personalEmail = Email.personal_email;
+        // const personalEmail = Email.personal_email;
         const formData = new FormData();
         formData.append('name', name);
         formData.append('email', email);
         formData.append('phone', phone);
 
+        alert("Você receberá uma mensagem  quando seu email for recebido! ");
 
-        // apiUrl.post(`${apiUrl}/${personalEmail}`, {
-        //     // method: 'POST',
-        //     body: formData
-
-        // })
-        fetch(`https://formsubmit.co/${personalEmail}`, {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
+        fetch(`https://formsubmit.co/${Email.personal_email}`, {
+            method: 'POST',
             body: formData
         })
             .then(response => {
@@ -94,10 +85,10 @@ export const FormInput = () => {
                     setName('');
                     setEmail('');
                     setPhone('');
-                    console.log(formData)
                     alert("Seu e-mail foi enviado com sucesso!");
+                    console.log("email sucessfull !");
                 } else {
-
+                    console.log("error o email não foi enviado ");
                     alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
                 }
             })
@@ -105,10 +96,8 @@ export const FormInput = () => {
                 console.error('Erro ao enviar formulário:', error);
                 alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
             });
+
     }
-
-
-
     return (
         <C.FormContainer>
             <C.Titlearea>
