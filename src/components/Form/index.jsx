@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import * as C from "./style";
 import { Email } from "../../utils/emails";
-//import {apiUrl } from '../../utils/api';
+import emailjs from '@emailjs/browser';
+import { smtpProvider } from '../../utils/smtp';
 export const FormInput = () => {
 
     const [name, setName] = useState('');
@@ -17,20 +18,17 @@ export const FormInput = () => {
     const validateEmail = (email) => {
         const lowercaseEmail = email.toLowerCase();
         const isValidFormat = emailRegex.test(lowercaseEmail);
-        const validProviders = [
-            "gmail.com",
-            "gmail.com.br",
-            "yahoo.com",
-            "outlook.com",
-            "uol.com",
-            "uol.com.br",
+        const validProviders = ["gmail.com", "gmail.com.br",
+            "yahoo.com", "outlook.com",
+            "uol.com", "uol.com.br",
             "hotmail.com",
             "hotmail.com.br",
             "icloud.com",
             "me.com",
             "mac.com",
             "aol.com",
-            "aol.com.br",];
+            "aol.com.br"
+        ];
         const emailParts = lowercaseEmail.split("@");
         const isValidProvider = validProviders.includes(emailParts[1]);
         return isValidFormat && isValidProvider;
@@ -74,29 +72,26 @@ export const FormInput = () => {
         formData.append('email', email);
         formData.append('phone', phone);
 
-        alert("Você receberá uma mensagem  quando seu email for recebido! ");
-
-        fetch(`https://formsubmit.co/${Email.personal_email}`, {
-            method: 'POST',
-            body: formData
-        })
-            .then(response => {
-                if (response.ok) {
-                    setName('');
-                    setEmail('');
-                    setPhone('');
-                    alert("Seu e-mail foi enviado com sucesso!");
-                    console.log("email sucessfull !");
-                } else {
-                    console.log("error o email não foi enviado ");
-                    alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
-                }
+        const templateParams = {
+            from_name: name,
+            email: email,
+            from_number: phone
+        }
+        
+        emailjs.send(`${smtpProvider.services_id}`,
+            `${smtpProvider.template_smtp}`,
+            templateParams,
+            `${smtpProvider.public_key}`)
+            .then((response) => {
+                alert("Email enviado com sucesso!");
+                console.log("email sucessfull !", response.status, response.text);
+                setName('');
+                setEmail('');
+                setPhone('');
+            }, (error) => {
+                alert("Error ao enviar o email. tente novamente mais tarde");
+                console.log("Error:", error);
             })
-            .catch(error => {
-                console.error('Erro ao enviar formulário:', error);
-                alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
-            });
-
     }
     return (
         <C.FormContainer>
