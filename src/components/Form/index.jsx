@@ -74,12 +74,12 @@ export const FormInput = () => {
 
         const templateParams = {
             from_name: name,
-            email: email,
+            from_email: email,
             from_number: phone
         }
-        
+
         emailjs.send(`${smtpProvider.services_id}`,
-            `${smtpProvider.template_smtp}`,
+            `${smtpProvider.template_id}`,
             templateParams,
             `${smtpProvider.public_key}`)
             .then((response) => {

@@ -1,6 +1,6 @@
 export const smtpProvider = {
-    services_id: "service_k1tsz4b",
-    template_smtp: "template_wu5tfv6",
-    public_key: "kcioyyFW70CpyM9aF"
+    services_id: "service_19bmzpn",
+    template_id: "template_exatidd",
+    public_key: "Ouqxl9p-i4HConS3b"
 }
 
