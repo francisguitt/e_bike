@@ -7,7 +7,7 @@ export const PixelInitializer = () => {
   const location = useLocation();
 
   useEffect(() => {
-    ReactPixel.init('399644826353113');
+    ReactPixel.init('');// numero/hash do pixcel aqui
     ReactPixel.pageView();
 
     // Rastrear um evento com um nome válido
